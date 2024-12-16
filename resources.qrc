@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>src/icons/close.png</file>
+    <file>src/icons/close-large-line.png</file>
+    <file>src/icons/help.png</file>
+    <file>src/icons/home.png</file>
+    <file>src/icons/links-line.png</file>
+    <file>src/icons/lock.png</file>
+    <file>src/icons/minimize.png</file>
+    <file>src/icons/subtract-line.png</file>
+    <file>src/icons/unlock.png</file>
+  </qresource>
+</RCC>

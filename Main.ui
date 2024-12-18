@@ -78,102 +78,126 @@ background:  rgba(48,50,51,1);
 
 }</string>
       </property>
-      <widget class="QPushButton" name="close_btn">
-       <property name="geometry">
-        <rect>
-         <x>860</x>
-         <y>0</y>
-         <width>40</width>
-         <height>39</height>
-        </rect>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <property name="leftMargin">
+        <number>0</number>
        </property>
-       <property name="minimumSize">
-        <size>
-         <width>40</width>
-         <height>39</height>
-        </size>
+       <property name="topMargin">
+        <number>0</number>
        </property>
-       <property name="maximumSize">
-        <size>
-         <width>40</width>
-         <height>39</height>
-        </size>
+       <property name="rightMargin">
+        <number>0</number>
        </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton:hover {
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="2">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="minimize_btn">
+           <property name="minimumSize">
+            <size>
+             <width>45</width>
+             <height>3</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>39</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/icons/src/icons/subtract-line.png</normaloff>:/icons/src/icons/subtract-line.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="close_btn">
+           <property name="minimumSize">
+            <size>
+             <width>45</width>
+             <height>39</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>39</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton:hover {
 background:   rgba(227,25,25,1);
 
 }</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="resources.qrc">
-         <normaloff>:/icons/src/icons/close-large-line.png</normaloff>:/icons/src/icons/close-large-line.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>15</width>
-         <height>15</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="minimize_btn">
-       <property name="geometry">
-        <rect>
-         <x>820</x>
-         <y>0</y>
-         <width>40</width>
-         <height>39</height>
-        </rect>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>40</width>
-         <height>3</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>40</width>
-         <height>39</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="resources.qrc">
-         <normaloff>:/icons/src/icons/subtract-line.png</normaloff>:/icons/src/icons/subtract-line.png</iconset>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_12">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>0</y>
-         <width>141</width>
-         <height>40</height>
-        </rect>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>40</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: 16pt &quot;Segoe UI&quot;;
-color:rgba(240, 247, 255,0.7);</string>
-       </property>
-       <property name="text">
-        <string>LockBox</string>
-       </property>
-      </widget>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/icons/src/icons/close-large-line.png</normaloff>:/icons/src/icons/close-large-line.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>15</width>
+             <height>15</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color:rgba(240, 247, 255,0.7);
+background: #141815;
+padding-left: 15px;</string>
+         </property>
+         <property name="text">
+          <string>LockBox</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>599</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
      </widget>
     </item>
     <item row="1" column="0">
@@ -350,6 +374,208 @@ padding-left:10px;</string>
         <property name="spacing">
          <number>0</number>
         </property>
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget_4" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>550</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget {
+background: #141815;
+}
+QPushButton {
+		text-align:left;
+color:rgba(240, 247, 255,0.7);
+         font-size:15px;
+		padding-left: 15px;
+padding: 7px 10px;
+border:none
+}
+QPushButton:checked {
+background-color: rgba(32,144,46,1);
+border-radius:5px;
+color:rgba(240, 247, 255, 1);
+
+}
+QPushButton:hover {
+background-color:rgba(240, 247, 255,0.1);
+}</string>
+          </property>
+          <widget class="QLabel" name="label_13">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>510</y>
+             <width>181</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgba(240, 247, 255,0.5);</string>
+           </property>
+           <property name="text">
+            <string>Powered by Surafel Production</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="visit_website_btn">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>480</y>
+             <width>179</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Visit website</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/icons/src/icons/links-line.png</normaloff>:/icons/src/icons/links-line.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>100</y>
+             <width>181</width>
+             <height>156</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QPushButton" name="homepage_btn">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="mouseTracking">
+               <bool>true</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Home</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/icons/src/icons/home.png</normaloff>:/icons/src/icons/home.png</iconset>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="encryptpage_btn">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Encrypt Files</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/icons/src/icons/lock.png</normaloff>:/icons/src/icons/lock.png</iconset>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="dcryptpage_btn">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Dcrypt Files</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/icons/src/icons/unlock.png</normaloff>:/icons/src/icons/unlock.png</iconset>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="helppage_btn">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Help</string>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/icons/src/icons/help.png</normaloff>:/icons/src/icons/help.png</iconset>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
         <item row="0" column="1">
          <widget class="QStackedWidget" name="stack_2">
           <property name="maximumSize">
@@ -411,221 +637,256 @@ color: white;
     }</string>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>3</number>
           </property>
           <widget class="QWidget" name="homepage">
-           <widget class="QLabel" name="label_14">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>10</y>
-              <width>351</width>
-              <height>31</height>
-             </rect>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <property name="leftMargin">
+             <number>0</number>
             </property>
-            <property name="styleSheet">
-             <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>700</width>
+                 <height>545</height>
+                </rect>
+               </property>
+               <widget class="QLabel" name="label_14">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>30</y>
+                  <width>351</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 16pt &quot;Segoe UI&quot;;
 color:rgba(240, 247, 255,1);
 background:transparent;</string>
-            </property>
-            <property name="text">
-             <string>Encrypt Files and Increase your safty</string>
-            </property>
-           </widget>
-           <widget class="QFrame" name="frame_5">
-            <property name="geometry">
-             <rect>
-              <x>20</x>
-              <y>100</y>
-              <width>201</width>
-              <height>131</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background:rgba(204, 212, 48, 0.5)</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Shape::NoFrame</enum>
-            </property>
-            <widget class="QLabel" name="label_15">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>10</y>
-               <width>121</width>
-               <height>31</height>
-              </rect>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+                </property>
+                <property name="text">
+                 <string>Encrypt Files and Increase your safty</string>
+                </property>
+               </widget>
+               <widget class="QFrame" name="frame_5">
+                <property name="geometry">
+                 <rect>
+                  <x>30</x>
+                  <y>120</y>
+                  <width>201</width>
+                  <height>131</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgba(32,144,46,0.5);
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <widget class="QLabel" name="label_19">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>121</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 12pt &quot;Segoe UI&quot;;
 color:rgba(240, 247, 255,1);
 background:transparent;
 font-weight:bold;</string>
-             </property>
-             <property name="text">
-              <string>Encrypted Files</string>
-             </property>
-            </widget>
-            <widget class="QLabel" name="label_16">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>50</y>
-               <width>51</width>
-               <height>21</height>
-              </rect>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">border-radius:0px;
+                 </property>
+                 <property name="text">
+                  <string>Encrypted Files</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_25">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>50</y>
+                   <width>51</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius:0px;
 background:transparent;
 font: 20pt &quot;Segoe UI&quot;;
 font-weight:bold;</string>
-             </property>
-             <property name="text">
-              <string>50</string>
-             </property>
-            </widget>
-           </widget>
-           <widget class="QFrame" name="frame_6">
-            <property name="geometry">
-             <rect>
-              <x>250</x>
-              <y>100</y>
-              <width>201</width>
-              <height>131</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background:rgba(69, 72, 208, 0.5)</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Shape::NoFrame</enum>
-            </property>
-            <widget class="QLabel" name="label_17">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>10</y>
-               <width>121</width>
-               <height>31</height>
-              </rect>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+                 </property>
+                 <property name="text">
+                  <string>50</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QFrame" name="frame_8">
+                <property name="geometry">
+                 <rect>
+                  <x>30</x>
+                  <y>270</y>
+                  <width>661</width>
+                  <height>181</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background:white;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <widget class="QLabel" name="label_26">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>20</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color:black;</string>
+                 </property>
+                 <property name="text">
+                  <string>How it works?</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QFrame" name="frame_6">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>120</y>
+                  <width>201</width>
+                  <height>131</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background:rgba(69, 72, 208, 0.5)</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <widget class="QLabel" name="label_27">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>121</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 12pt &quot;Segoe UI&quot;;
 color:rgba(240, 247, 255,1);
 background:transparent;
 font-weight:bold;</string>
-             </property>
-             <property name="text">
-              <string>File Type</string>
-             </property>
-            </widget>
-            <widget class="QLabel" name="label_22">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>50</y>
-               <width>51</width>
-               <height>21</height>
-              </rect>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">border-radius:0px;
+                 </property>
+                 <property name="text">
+                  <string>File Type</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_28">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>50</y>
+                   <width>51</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius:0px;
 background:transparent;
 font: 18pt &quot;Segoe UI&quot;;
 font-weight:bold;</string>
-             </property>
-             <property name="text">
-              <string>2</string>
-             </property>
-            </widget>
-           </widget>
-           <widget class="QFrame" name="frame_7">
-            <property name="geometry">
-             <rect>
-              <x>480</x>
-              <y>100</y>
-              <width>201</width>
-              <height>131</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background:rgba(189, 13, 1, 0.5)</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Shape::NoFrame</enum>
-            </property>
-            <widget class="QLabel" name="label_23">
-             <property name="geometry">
-              <rect>
-               <x>20</x>
-               <y>10</y>
-               <width>121</width>
-               <height>31</height>
-              </rect>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+                 </property>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QFrame" name="frame_7">
+                <property name="geometry">
+                 <rect>
+                  <x>490</x>
+                  <y>120</y>
+                  <width>201</width>
+                  <height>131</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background:rgba(189, 13, 1, 0.5)</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <widget class="QLabel" name="label_29">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>10</y>
+                   <width>121</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 12pt &quot;Segoe UI&quot;;
 color:rgba(240, 247, 255,1);
 background:transparent;
 font-weight:bold;</string>
-             </property>
-             <property name="text">
-              <string>File Type</string>
-             </property>
-            </widget>
-           </widget>
-           <widget class="QFrame" name="frame_8">
-            <property name="geometry">
-             <rect>
-              <x>20</x>
-              <y>250</y>
-              <width>661</width>
-              <height>181</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background:white;</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::Shape::NoFrame</enum>
-            </property>
-            <widget class="QLabel" name="label_18">
-             <property name="geometry">
-              <rect>
-               <x>20</x>
-               <y>20</y>
-               <width>141</width>
-               <height>21</height>
-              </rect>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">font: 16pt &quot;Segoe UI&quot;;
-color:black;</string>
-             </property>
-             <property name="text">
-              <string>How it works?</string>
-             </property>
-            </widget>
-           </widget>
-           <widget class="QLabel" name="label_19">
-            <property name="geometry">
-             <rect>
-              <x>30</x>
-              <y>450</y>
-              <width>561</width>
-              <height>31</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+                 </property>
+                 <property name="text">
+                  <string>File Type</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QLabel" name="label_30">
+                <property name="geometry">
+                 <rect>
+                  <x>40</x>
+                  <y>470</y>
+                  <width>561</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 12pt &quot;Segoe UI&quot;;
 color:black;
 background:transparent;</string>
-            </property>
-            <property name="text">
-             <string>Encrypt Images, Audio, Video, Documents, Folders and Files.</string>
-            </property>
-           </widget>
+                </property>
+                <property name="text">
+                 <string>Encrypt Images, Audio, Video, Documents, Folders and Files.</string>
+                </property>
+               </widget>
+              </widget>
+             </widget>
+            </item>
+           </layout>
           </widget>
           <widget class="QWidget" name="helppage">
            <widget class="QTextEdit" name="help_message_input">
@@ -749,23 +1010,7 @@ background:transparent;</string>
             </property>
            </widget>
           </widget>
-          <widget class="QWidget" name="encryptpage">
-           <widget class="QTextEdit" name="textEdit_4">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>70</y>
-              <width>671</width>
-              <height>411</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background:rgba(0,0,0,0.8);
-border-radius:5px;
-color:rgba(255, 255, 255, 0.8);
-font: 11pt &quot;Segoe UI&quot;;</string>
-            </property>
-           </widget>
+          <widget class="QWidget" name="dcryptpage">
            <widget class="QPushButton" name="encrypt_select_file">
             <property name="geometry">
              <rect>
@@ -842,11 +1087,11 @@ background:transparent;
 font-weight:bold;</string>
             </property>
             <property name="text">
-             <string>Encrypt Files</string>
+             <string>Decrypt Files</string>
             </property>
            </widget>
           </widget>
-          <widget class="QWidget" name="dcryptpage">
+          <widget class="QWidget" name="encryptpage">
            <layout class="QGridLayout" name="gridLayout_3">
             <item row="2" column="0" colspan="2">
              <widget class="QTextEdit" name="dcrypt_logs">
@@ -1091,209 +1336,7 @@ background:transparent;
 font-weight:bold;</string>
               </property>
               <property name="text">
-               <string>Dcrypt Files</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QWidget" name="widget_4" native="true">
-          <property name="maximumSize">
-           <size>
-            <width>200</width>
-            <height>550</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QWidget {
-background: rgba(35,39,42,1);
-}
-QPushButton {
-		text-align:left;
-color:rgba(240, 247, 255,0.7);
-         font-size:15px;
-		padding-left: 15px;
-padding: 7px 10px;
-border:none
-}
-QPushButton:checked {
-background-color: rgba(32,144,46,1);
-border-radius:5px;
-color:rgba(240, 247, 255, 1);
-
-}
-QPushButton:hover {
-background-color:rgba(240, 247, 255,0.1);
-}</string>
-          </property>
-          <widget class="QLabel" name="label_13">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>510</y>
-             <width>181</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color:rgba(240, 247, 255,0.5);</string>
-           </property>
-           <property name="text">
-            <string>Powered by Surafel Production</string>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="visit_website_btn">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>480</y>
-             <width>179</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true"/>
-           </property>
-           <property name="text">
-            <string>Visit website</string>
-           </property>
-           <property name="icon">
-            <iconset resource="resources.qrc">
-             <normaloff>:/icons/src/icons/links-line.png</normaloff>:/icons/src/icons/links-line.png</iconset>
-           </property>
-           <property name="checkable">
-            <bool>false</bool>
-           </property>
-           <property name="autoExclusive">
-            <bool>true</bool>
-           </property>
-          </widget>
-          <widget class="QWidget" name="layoutWidget_4">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>100</y>
-             <width>181</width>
-             <height>156</height>
-            </rect>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_2">
-            <item>
-             <widget class="QPushButton" name="homepage_btn">
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="mouseTracking">
-               <bool>true</bool>
-              </property>
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Home</string>
-              </property>
-              <property name="icon">
-               <iconset resource="resources.qrc">
-                <normaloff>:/icons/src/icons/home.png</normaloff>:/icons/src/icons/home.png</iconset>
-              </property>
-              <property name="checkable">
-               <bool>true</bool>
-              </property>
-              <property name="checked">
-               <bool>true</bool>
-              </property>
-              <property name="autoExclusive">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="encryptpage_btn">
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
                <string>Encrypt Files</string>
-              </property>
-              <property name="icon">
-               <iconset resource="resources.qrc">
-                <normaloff>:/icons/src/icons/lock.png</normaloff>:/icons/src/icons/lock.png</iconset>
-              </property>
-              <property name="checkable">
-               <bool>true</bool>
-              </property>
-              <property name="autoExclusive">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="dcryptpage_btn">
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Dcrypt Files</string>
-              </property>
-              <property name="icon">
-               <iconset resource="resources.qrc">
-                <normaloff>:/icons/src/icons/unlock.png</normaloff>:/icons/src/icons/unlock.png</iconset>
-              </property>
-              <property name="checkable">
-               <bool>true</bool>
-              </property>
-              <property name="autoExclusive">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="helppage_btn">
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Help</string>
-              </property>
-              <property name="icon">
-               <iconset resource="resources.qrc">
-                <normaloff>:/icons/src/icons/help.png</normaloff>:/icons/src/icons/help.png</iconset>
-              </property>
-              <property name="checkable">
-               <bool>true</bool>
-              </property>
-              <property name="autoExclusive">
-               <bool>true</bool>
               </property>
              </widget>
             </item>

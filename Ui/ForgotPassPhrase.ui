@@ -362,7 +362,7 @@ background:transparent;
             <number>15</number>
            </property>
            <item>
-            <widget class="QTextEdit" name="recovery_phrase_text_field_2">
+            <widget class="QTextEdit" name="passphrase_show_input">
              <property name="maximumSize">
               <size>
                <width>16777215</width>
@@ -372,7 +372,7 @@ background:transparent;
             </widget>
            </item>
            <item alignment="Qt::AlignmentFlag::AlignHCenter">
-            <widget class="QPushButton" name="copy_recovery_phrase_btn_2">
+            <widget class="QPushButton" name="copy_passphrase_btn">
              <property name="minimumSize">
               <size>
                <width>120</width>

@@ -5,6 +5,8 @@ from PySide6.QtCore import Qt, QPoint
 import webbrowser
 from Core.start_app import StartApp
 from .message import MessageBox
+from .change_password import ChangePassword
+from .change_passphrase import ChangePassphrase
 
 class LockBox(Ui_MainWindow, QMainWindow):
     def __init__(self):
@@ -37,7 +39,34 @@ class LockBox(Ui_MainWindow, QMainWindow):
         self.dcryptpage_btn.clicked.connect(lambda: self.stack_2.setCurrentIndex(2))
         self.encryptpage_btn.clicked.connect(lambda: self.stack_2.setCurrentIndex(3))
         self.visit_website_btn.clicked.connect(lambda: webbrowser.open("https:t.me/surafel_is_here"))
+
         self.landingpage_get_started_btn.clicked.connect(self.handle_start_app)
+
+        #Handle Change Password
+        self.change_password_btn.clicked.connect(self.handle_password_change)
+        self.change_passphrase_btn.clicked.connect(self.handle_passphrase_change)
+
+    def handle_password_change(self):
+        change_password_dialog = ChangePassword(self)
+        self.overlay.setVisible(True)
+        result = change_password_dialog.exec()
+        if int(result) == 1:
+            self.stack_1.setCurrentIndex(1)
+        else:
+            pass
+        
+        self.overlay.setVisible(False)
+
+    def handle_passphrase_change(self):
+        change_passphrase_dialog = ChangePassphrase(self)
+        self.overlay.setVisible(True)
+        result = change_passphrase_dialog.exec()
+        if int(result) == 1:
+            self.stack_1.setCurrentIndex(1)
+        else:
+            pass
+
+        self.overlay.setVisible(False)
 
     def handle_start_app(self):
         start_app = StartApp(self)

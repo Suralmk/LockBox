@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'starterDialog.ui'
+## Form generated from reading UI file 'StarterDialog.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.2
 ##
@@ -146,13 +146,13 @@ class Ui_starterDialog(object):
         self.choose_location_next.setCheckable(True)
         self.choose_location_next.setChecked(True)
         self.choose_location_next.setAutoExclusive(True)
-        self.widget = QWidget(self.filelocationpage)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(20, 20, 551, 131))
-        self.verticalLayout = QVBoxLayout(self.widget)
+        self.layoutWidget = QWidget(self.filelocationpage)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(20, 20, 551, 131))
+        self.verticalLayout = QVBoxLayout(self.layoutWidget)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.label = QLabel(self.widget)
+        self.label = QLabel(self.layoutWidget)
         self.label.setObjectName(u"label")
         self.label.setStyleSheet(u"font: 12pt \"Segoe UI\";\n"
 "color:rgb(240, 247, 255);\n"
@@ -163,7 +163,7 @@ class Ui_starterDialog(object):
 
         self.formLayout = QFormLayout()
         self.formLayout.setObjectName(u"formLayout")
-        self.choose_location_btn = QPushButton(self.widget)
+        self.choose_location_btn = QPushButton(self.layoutWidget)
         self.choose_location_btn.setObjectName(u"choose_location_btn")
         self.choose_location_btn.setMaximumSize(QSize(16777215, 40))
         self.choose_location_btn.setMouseTracking(True)
@@ -177,7 +177,7 @@ class Ui_starterDialog(object):
 
         self.formLayout.setWidget(0, QFormLayout.LabelRole, self.choose_location_btn)
 
-        self.choose_location_input = QLineEdit(self.widget)
+        self.choose_location_input = QLineEdit(self.layoutWidget)
         self.choose_location_input.setObjectName(u"choose_location_input")
         self.choose_location_input.setMinimumSize(QSize(30, 35))
         self.choose_location_input.setMaximumSize(QSize(16777215, 30))
@@ -241,13 +241,13 @@ class Ui_starterDialog(object):
         self.confirm_password_input.setMinimumSize(QSize(30, 35))
         self.confirm_password_input.setMaximumSize(QSize(16777215, 30))
         self.confirm_password_input.setStyleSheet(u"")
-        self.widget1 = QWidget(self.createpasswordpage)
-        self.widget1.setObjectName(u"widget1")
-        self.widget1.setGeometry(QRect(20, 182, 381, 16))
-        self.horizontalLayout_2 = QHBoxLayout(self.widget1)
+        self.layoutWidget1 = QWidget(self.createpasswordpage)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(20, 182, 381, 16))
+        self.horizontalLayout_2 = QHBoxLayout(self.layoutWidget1)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.very_weak_password_frame = QFrame(self.widget1)
+        self.very_weak_password_frame = QFrame(self.layoutWidget1)
         self.very_weak_password_frame.setObjectName(u"very_weak_password_frame")
         self.very_weak_password_frame.setMinimumSize(QSize(50, 10))
         self.very_weak_password_frame.setMaximumSize(QSize(70, 10))
@@ -256,7 +256,7 @@ class Ui_starterDialog(object):
 
         self.horizontalLayout_2.addWidget(self.very_weak_password_frame)
 
-        self.week_password_frame = QFrame(self.widget1)
+        self.week_password_frame = QFrame(self.layoutWidget1)
         self.week_password_frame.setObjectName(u"week_password_frame")
         self.week_password_frame.setMinimumSize(QSize(50, 10))
         self.week_password_frame.setMaximumSize(QSize(70, 10))
@@ -265,7 +265,7 @@ class Ui_starterDialog(object):
 
         self.horizontalLayout_2.addWidget(self.week_password_frame)
 
-        self.medium_password_frame = QFrame(self.widget1)
+        self.medium_password_frame = QFrame(self.layoutWidget1)
         self.medium_password_frame.setObjectName(u"medium_password_frame")
         self.medium_password_frame.setMinimumSize(QSize(50, 10))
         self.medium_password_frame.setMaximumSize(QSize(70, 10))
@@ -274,7 +274,7 @@ class Ui_starterDialog(object):
 
         self.horizontalLayout_2.addWidget(self.medium_password_frame)
 
-        self.strong_password_frame = QFrame(self.widget1)
+        self.strong_password_frame = QFrame(self.layoutWidget1)
         self.strong_password_frame.setObjectName(u"strong_password_frame")
         self.strong_password_frame.setMinimumSize(QSize(50, 10))
         self.strong_password_frame.setMaximumSize(QSize(70, 10))
@@ -283,7 +283,7 @@ class Ui_starterDialog(object):
 
         self.horizontalLayout_2.addWidget(self.strong_password_frame)
 
-        self.very_strong_password_frame = QFrame(self.widget1)
+        self.very_strong_password_frame = QFrame(self.layoutWidget1)
         self.very_strong_password_frame.setObjectName(u"very_strong_password_frame")
         self.very_strong_password_frame.setMinimumSize(QSize(50, 10))
         self.very_strong_password_frame.setMaximumSize(QSize(70, 10))
@@ -427,13 +427,13 @@ class Ui_starterDialog(object):
         self.success_page_next.setCheckable(True)
         self.success_page_next.setChecked(True)
         self.success_page_next.setAutoExclusive(True)
-        self.widget2 = QWidget(self.successpage)
-        self.widget2.setObjectName(u"widget2")
-        self.widget2.setGeometry(QRect(200, 40, 209, 156))
-        self.verticalLayout_3 = QVBoxLayout(self.widget2)
+        self.layoutWidget2 = QWidget(self.successpage)
+        self.layoutWidget2.setObjectName(u"layoutWidget2")
+        self.layoutWidget2.setGeometry(QRect(200, 40, 209, 156))
+        self.verticalLayout_3 = QVBoxLayout(self.layoutWidget2)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.frame_2 = QFrame(self.widget2)
+        self.frame_2 = QFrame(self.layoutWidget2)
         self.frame_2.setObjectName(u"frame_2")
         self.frame_2.setMinimumSize(QSize(120, 120))
         self.frame_2.setMaximumSize(QSize(120, 120))
@@ -459,7 +459,7 @@ class Ui_starterDialog(object):
 
         self.verticalLayout_3.addWidget(self.frame_2, 0, Qt.AlignmentFlag.AlignHCenter)
 
-        self.label_13 = QLabel(self.widget2)
+        self.label_13 = QLabel(self.layoutWidget2)
         self.label_13.setObjectName(u"label_13")
         self.label_13.setStyleSheet(u"font: 16pt \"Segoe UI\";\n"
 "color:rgb(240, 247, 255);\n"
@@ -480,7 +480,7 @@ class Ui_starterDialog(object):
         self.retranslateUi(starterDialog)
         self.close_btn.clicked.connect(starterDialog.close)
 
-        self.starterStackWidget.setCurrentIndex(2)
+        self.starterStackWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(starterDialog)
@@ -507,7 +507,7 @@ class Ui_starterDialog(object):
         self.confirm_passphrase.setPlaceholderText(QCoreApplication.translate("starterDialog", u"repeat passphrase", None))
         self.passphrasepage_back_btn.setText(QCoreApplication.translate("starterDialog", u"Back", None))
         self.generate_passphrase_btn.setText(QCoreApplication.translate("starterDialog", u"Generate", None))
-        self.passphrase_backup.setText(QCoreApplication.translate("starterDialog", u"Backup with a secret phrase", None))
+        self.passphrase_backup.setText(QCoreApplication.translate("starterDialog", u"Backup with a secret phrasee", None))
         self.copy_recovery_phrase_btn.setText(QCoreApplication.translate("starterDialog", u"Copy", None))
         self.label_9.setText(QCoreApplication.translate("starterDialog", u"Secret  recovery phrase", None))
         self.label_10.setText(QCoreApplication.translate("starterDialog", u"Use this secret phrase to recover. Make sure you save it and ", None))

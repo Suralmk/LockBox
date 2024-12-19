@@ -150,7 +150,7 @@ class Ui_MainWindow(object):
 "background-color: rgba(32,144,46,1);\n"
 "}\n"
 "QPushButton:hover {\n"
-"background-color:rgba(240, 247, 255,0.1);\n"
+"background-color: rgba(32,144,46,0.8);\n"
 "}\n"
 "\n"
 "QLineEdit {\n"
@@ -164,14 +164,14 @@ class Ui_MainWindow(object):
         self.landingpage.setObjectName(u"landingpage")
         self.label_7 = QLabel(self.landingpage)
         self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(300, 120, 201, 41))
+        self.label_7.setGeometry(QRect(330, 150, 201, 41))
         self.label_7.setStyleSheet(u"font: 20pt \"Segoe UI\";\n"
 "color:rgba(240, 247, 255,0.7);\n"
 "padding-left: 15px;\n"
 "text-align:center;")
         self.landingpage_get_started_btn = QPushButton(self.landingpage)
         self.landingpage_get_started_btn.setObjectName(u"landingpage_get_started_btn")
-        self.landingpage_get_started_btn.setGeometry(QRect(280, 390, 261, 35))
+        self.landingpage_get_started_btn.setGeometry(QRect(300, 250, 261, 35))
         self.landingpage_get_started_btn.setMinimumSize(QSize(0, 35))
         self.landingpage_get_started_btn.setMaximumSize(QSize(16777215, 30))
         self.landingpage_get_started_btn.setStyleSheet(u"")
@@ -188,14 +188,17 @@ class Ui_MainWindow(object):
 "color:rgba(240, 247, 255,0.7);\n"
 "padding-left: 15px;\n"
 "text-align:center;")
-        self.layoutWidget = QWidget(self.loginpage)
-        self.layoutWidget.setObjectName(u"layoutWidget")
-        self.layoutWidget.setGeometry(QRect(260, 170, 351, 151))
-        self.verticalLayout = QVBoxLayout(self.layoutWidget)
+        self.widget = QWidget(self.loginpage)
+        self.widget.setObjectName(u"widget")
+        self.widget.setGeometry(QRect(261, 171, 381, 191))
+        self.verticalLayout_4 = QVBoxLayout(self.widget)
+        self.verticalLayout_4.setSpacing(20)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setSpacing(10)
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.label_3 = QLabel(self.layoutWidget)
+        self.label_3 = QLabel(self.widget)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setMaximumSize(QSize(16777215, 20))
         self.label_3.setStyleSheet(u"font: 12pt \"Segoe UI\";\n"
@@ -205,7 +208,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.label_3)
 
-        self.stack_1_password_input = QLineEdit(self.layoutWidget)
+        self.stack_1_password_input = QLineEdit(self.widget)
         self.stack_1_password_input.setObjectName(u"stack_1_password_input")
         self.stack_1_password_input.setMinimumSize(QSize(30, 35))
         self.stack_1_password_input.setMaximumSize(QSize(16777215, 30))
@@ -213,7 +216,13 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.stack_1_password_input)
 
-        self.stack_1_login_btn = QPushButton(self.layoutWidget)
+
+        self.verticalLayout_4.addLayout(self.verticalLayout)
+
+        self.verticalLayout_3 = QVBoxLayout()
+        self.verticalLayout_3.setSpacing(10)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.stack_1_login_btn = QPushButton(self.widget)
         self.stack_1_login_btn.setObjectName(u"stack_1_login_btn")
         self.stack_1_login_btn.setMinimumSize(QSize(0, 35))
         self.stack_1_login_btn.setMaximumSize(QSize(16777215, 30))
@@ -221,7 +230,25 @@ class Ui_MainWindow(object):
         self.stack_1_login_btn.setCheckable(True)
         self.stack_1_login_btn.setAutoExclusive(True)
 
-        self.verticalLayout.addWidget(self.stack_1_login_btn)
+        self.verticalLayout_3.addWidget(self.stack_1_login_btn)
+
+        self.pushButton = QPushButton(self.widget)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setStyleSheet(u"\n"
+"QPushButton {\n"
+"padding:0;\n"
+"background:transparent;\n"
+"padding: 0 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"  color:white;\n"
+"}")
+
+        self.verticalLayout_3.addWidget(self.pushButton, 0, Qt.AlignmentFlag.AlignHCenter)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_3)
 
         self.stack_1.addWidget(self.loginpage)
         self.mainpage = QWidget()
@@ -497,12 +524,12 @@ class Ui_MainWindow(object):
         self.stack_2.addWidget(self.homepage)
         self.settingspage = QWidget()
         self.settingspage.setObjectName(u"settingspage")
-        self.help_send_btn = QPushButton(self.settingspage)
-        self.help_send_btn.setObjectName(u"help_send_btn")
-        self.help_send_btn.setGeometry(QRect(550, 480, 120, 35))
-        self.help_send_btn.setMinimumSize(QSize(0, 35))
-        self.help_send_btn.setMaximumSize(QSize(120, 35))
-        self.help_send_btn.setStyleSheet(u"QPushButton {\n"
+        self.save_settings_btn = QPushButton(self.settingspage)
+        self.save_settings_btn.setObjectName(u"save_settings_btn")
+        self.save_settings_btn.setGeometry(QRect(550, 480, 120, 35))
+        self.save_settings_btn.setMinimumSize(QSize(0, 35))
+        self.save_settings_btn.setMaximumSize(QSize(120, 35))
+        self.save_settings_btn.setStyleSheet(u"QPushButton {\n"
 "		text-align:center;\n"
 "color:rgba(240, 247, 255,0.7);\n"
 "         font-size:15px;\n"
@@ -514,33 +541,33 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "background-color:rgba(240, 247, 255,0.1);\n"
 "}")
-        self.help_send_btn.setCheckable(True)
-        self.help_send_btn.setAutoExclusive(True)
+        self.save_settings_btn.setCheckable(True)
+        self.save_settings_btn.setAutoExclusive(True)
         self.label_20 = QLabel(self.settingspage)
         self.label_20.setObjectName(u"label_20")
-        self.label_20.setGeometry(QRect(20, 10, 611, 70))
+        self.label_20.setGeometry(QRect(10, 10, 621, 70))
         self.label_20.setMinimumSize(QSize(0, 70))
         self.label_20.setMaximumSize(QSize(16777215, 70))
         self.label_20.setStyleSheet(u"font: 16pt \"Segoe UI\";\n"
 "color:rgba(240, 247, 255, 1);\n"
 "background:transparent;\n"
 "font-weight:bold;")
-        self.layoutWidget1 = QWidget(self.settingspage)
-        self.layoutWidget1.setObjectName(u"layoutWidget1")
-        self.layoutWidget1.setGeometry(QRect(20, 190, 211, 23))
-        self.horizontalLayout_4 = QHBoxLayout(self.layoutWidget1)
+        self.layoutWidget = QWidget(self.settingspage)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(20, 190, 211, 23))
+        self.horizontalLayout_4 = QHBoxLayout(self.layoutWidget)
         self.horizontalLayout_4.setSpacing(15)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
-        self.setting_checkBox_2 = QCheckBox(self.layoutWidget1)
-        self.setting_checkBox_2.setObjectName(u"setting_checkBox_2")
-        self.setting_checkBox_2.setMinimumSize(QSize(20, 20))
-        self.setting_checkBox_2.setMaximumSize(QSize(20, 20))
-        self.setting_checkBox_2.setStyleSheet(u"")
+        self.auto_delete_checkbox = QCheckBox(self.layoutWidget)
+        self.auto_delete_checkbox.setObjectName(u"auto_delete_checkbox")
+        self.auto_delete_checkbox.setMinimumSize(QSize(20, 20))
+        self.auto_delete_checkbox.setMaximumSize(QSize(20, 20))
+        self.auto_delete_checkbox.setStyleSheet(u"")
 
-        self.horizontalLayout_4.addWidget(self.setting_checkBox_2)
+        self.horizontalLayout_4.addWidget(self.auto_delete_checkbox)
 
-        self.label_2 = QLabel(self.layoutWidget1)
+        self.label_2 = QLabel(self.layoutWidget)
         self.label_2.setObjectName(u"label_2")
 
         self.horizontalLayout_4.addWidget(self.label_2)
@@ -556,11 +583,11 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.label_6)
 
-        self.choose_location_btn_4 = QPushButton(self.layoutWidget_2)
-        self.choose_location_btn_4.setObjectName(u"choose_location_btn_4")
-        self.choose_location_btn_4.setMaximumSize(QSize(16777215, 40))
-        self.choose_location_btn_4.setMouseTracking(True)
-        self.choose_location_btn_4.setStyleSheet(u"QPushButton {\n"
+        self.change_passphrase_btn = QPushButton(self.layoutWidget_2)
+        self.change_passphrase_btn.setObjectName(u"change_passphrase_btn")
+        self.change_passphrase_btn.setMaximumSize(QSize(16777215, 40))
+        self.change_passphrase_btn.setMouseTracking(True)
+        self.change_passphrase_btn.setStyleSheet(u"QPushButton {\n"
 "		text-align:center;\n"
 "color:rgba(240, 247, 255,0.7);\n"
 "         font-size:15px;\n"
@@ -574,24 +601,24 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "background-color:rgba(240, 247, 255,0.1);\n"
 "}")
-        self.choose_location_btn_4.setCheckable(True)
-        self.choose_location_btn_4.setChecked(True)
-        self.choose_location_btn_4.setAutoExclusive(True)
+        self.change_passphrase_btn.setCheckable(True)
+        self.change_passphrase_btn.setChecked(True)
+        self.change_passphrase_btn.setAutoExclusive(True)
 
-        self.horizontalLayout_6.addWidget(self.choose_location_btn_4)
+        self.horizontalLayout_6.addWidget(self.change_passphrase_btn)
 
-        self.layoutWidget2 = QWidget(self.settingspage)
-        self.layoutWidget2.setObjectName(u"layoutWidget2")
-        self.layoutWidget2.setGeometry(QRect(14, 80, 571, 51))
-        self.horizontalLayout_2 = QHBoxLayout(self.layoutWidget2)
+        self.layoutWidget1 = QWidget(self.settingspage)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(14, 80, 571, 51))
+        self.horizontalLayout_2 = QHBoxLayout(self.layoutWidget1)
         self.horizontalLayout_2.setSpacing(15)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.choose_location_btn = QPushButton(self.layoutWidget2)
-        self.choose_location_btn.setObjectName(u"choose_location_btn")
-        self.choose_location_btn.setMaximumSize(QSize(16777215, 40))
-        self.choose_location_btn.setMouseTracking(True)
-        self.choose_location_btn.setStyleSheet(u"QPushButton {\n"
+        self.change_location_btn = QPushButton(self.layoutWidget1)
+        self.change_location_btn.setObjectName(u"change_location_btn")
+        self.change_location_btn.setMaximumSize(QSize(16777215, 40))
+        self.change_location_btn.setMouseTracking(True)
+        self.change_location_btn.setStyleSheet(u"QPushButton {\n"
 "		text-align:center;\n"
 "color:rgba(240, 247, 255,0.7);\n"
 "         font-size:15px;\n"
@@ -607,57 +634,57 @@ class Ui_MainWindow(object):
 "}")
         icon7 = QIcon()
         icon7.addFile(u":/icons/icons/folder-3-fill.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.choose_location_btn.setIcon(icon7)
-        self.choose_location_btn.setCheckable(True)
-        self.choose_location_btn.setChecked(True)
-        self.choose_location_btn.setAutoExclusive(True)
+        self.change_location_btn.setIcon(icon7)
+        self.change_location_btn.setCheckable(True)
+        self.change_location_btn.setChecked(True)
+        self.change_location_btn.setAutoExclusive(True)
 
-        self.horizontalLayout_2.addWidget(self.choose_location_btn)
+        self.horizontalLayout_2.addWidget(self.change_location_btn)
 
-        self.choose_location_input = QLineEdit(self.layoutWidget2)
-        self.choose_location_input.setObjectName(u"choose_location_input")
-        self.choose_location_input.setMinimumSize(QSize(30, 35))
-        self.choose_location_input.setMaximumSize(QSize(16777215, 30))
-        self.choose_location_input.setStyleSheet(u"")
+        self.setting_location_input = QLineEdit(self.layoutWidget1)
+        self.setting_location_input.setObjectName(u"setting_location_input")
+        self.setting_location_input.setMinimumSize(QSize(30, 35))
+        self.setting_location_input.setMaximumSize(QSize(16777215, 30))
+        self.setting_location_input.setStyleSheet(u"")
 
-        self.horizontalLayout_2.addWidget(self.choose_location_input)
+        self.horizontalLayout_2.addWidget(self.setting_location_input)
 
-        self.layoutWidget3 = QWidget(self.settingspage)
-        self.layoutWidget3.setObjectName(u"layoutWidget3")
-        self.layoutWidget3.setGeometry(QRect(20, 150, 316, 23))
-        self.horizontalLayout_3 = QHBoxLayout(self.layoutWidget3)
+        self.layoutWidget2 = QWidget(self.settingspage)
+        self.layoutWidget2.setObjectName(u"layoutWidget2")
+        self.layoutWidget2.setGeometry(QRect(20, 150, 316, 23))
+        self.horizontalLayout_3 = QHBoxLayout(self.layoutWidget2)
         self.horizontalLayout_3.setSpacing(15)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.setting_checkBox = QCheckBox(self.layoutWidget3)
-        self.setting_checkBox.setObjectName(u"setting_checkBox")
-        self.setting_checkBox.setMinimumSize(QSize(20, 20))
-        self.setting_checkBox.setMaximumSize(QSize(20, 20))
-        self.setting_checkBox.setStyleSheet(u"")
+        self.hide_encrypted_files_checkbox = QCheckBox(self.layoutWidget2)
+        self.hide_encrypted_files_checkbox.setObjectName(u"hide_encrypted_files_checkbox")
+        self.hide_encrypted_files_checkbox.setMinimumSize(QSize(20, 20))
+        self.hide_encrypted_files_checkbox.setMaximumSize(QSize(20, 20))
+        self.hide_encrypted_files_checkbox.setStyleSheet(u"")
 
-        self.horizontalLayout_3.addWidget(self.setting_checkBox)
+        self.horizontalLayout_3.addWidget(self.hide_encrypted_files_checkbox)
 
-        self.label = QLabel(self.layoutWidget3)
+        self.label = QLabel(self.layoutWidget2)
         self.label.setObjectName(u"label")
 
         self.horizontalLayout_3.addWidget(self.label)
 
-        self.layoutWidget4 = QWidget(self.settingspage)
-        self.layoutWidget4.setObjectName(u"layoutWidget4")
-        self.layoutWidget4.setGeometry(QRect(20, 230, 341, 36))
-        self.horizontalLayout_5 = QHBoxLayout(self.layoutWidget4)
+        self.layoutWidget3 = QWidget(self.settingspage)
+        self.layoutWidget3.setObjectName(u"layoutWidget3")
+        self.layoutWidget3.setGeometry(QRect(20, 230, 341, 36))
+        self.horizontalLayout_5 = QHBoxLayout(self.layoutWidget3)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.label_5 = QLabel(self.layoutWidget4)
+        self.label_5 = QLabel(self.layoutWidget3)
         self.label_5.setObjectName(u"label_5")
 
         self.horizontalLayout_5.addWidget(self.label_5)
 
-        self.choose_location_btn_2 = QPushButton(self.layoutWidget4)
-        self.choose_location_btn_2.setObjectName(u"choose_location_btn_2")
-        self.choose_location_btn_2.setMaximumSize(QSize(16777215, 40))
-        self.choose_location_btn_2.setMouseTracking(True)
-        self.choose_location_btn_2.setStyleSheet(u"QPushButton {\n"
+        self.change_password_btn = QPushButton(self.layoutWidget3)
+        self.change_password_btn.setObjectName(u"change_password_btn")
+        self.change_password_btn.setMaximumSize(QSize(16777215, 40))
+        self.change_password_btn.setMouseTracking(True)
+        self.change_password_btn.setStyleSheet(u"QPushButton {\n"
 "		text-align:center;\n"
 "color:rgba(240, 247, 255,0.7);\n"
 "         font-size:15px;\n"
@@ -671,11 +698,11 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "background-color:rgba(240, 247, 255,0.1);\n"
 "}")
-        self.choose_location_btn_2.setCheckable(True)
-        self.choose_location_btn_2.setChecked(True)
-        self.choose_location_btn_2.setAutoExclusive(True)
+        self.change_password_btn.setCheckable(True)
+        self.change_password_btn.setChecked(True)
+        self.change_password_btn.setAutoExclusive(True)
 
-        self.horizontalLayout_5.addWidget(self.choose_location_btn_2)
+        self.horizontalLayout_5.addWidget(self.change_password_btn)
 
         self.stack_2.addWidget(self.settingspage)
         self.dcryptpage = QWidget()
@@ -908,6 +935,7 @@ class Ui_MainWindow(object):
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Input Password", None))
         self.stack_1_password_input.setPlaceholderText(QCoreApplication.translate("MainWindow", u"password", None))
         self.stack_1_login_btn.setText(QCoreApplication.translate("MainWindow", u"Login", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Forgot Password", None))
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"Powered by Surafel Production", None))
         self.visit_website_btn.setText(QCoreApplication.translate("MainWindow", u"Visit website", None))
         self.homepage_btn.setText(QCoreApplication.translate("MainWindow", u"Home", None))
@@ -922,18 +950,18 @@ class Ui_MainWindow(object):
         self.label_28.setText(QCoreApplication.translate("MainWindow", u"2", None))
         self.label_29.setText(QCoreApplication.translate("MainWindow", u"File Type", None))
         self.label_30.setText(QCoreApplication.translate("MainWindow", u"Encrypt Images, Audio, Video, Documents, Folders and Files.", None))
-        self.help_send_btn.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+        self.save_settings_btn.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"Settings", None))
-        self.setting_checkBox_2.setText(QCoreApplication.translate("MainWindow", u"dsdsffsd", None))
+        self.auto_delete_checkbox.setText(QCoreApplication.translate("MainWindow", u"dsdsffsd", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Auto delete original file", None))
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Create a new password", None))
-        self.choose_location_btn_4.setText(QCoreApplication.translate("MainWindow", u"New Passphrase", None))
-        self.choose_location_btn.setText(QCoreApplication.translate("MainWindow", u"Change Location", None))
-        self.choose_location_input.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Location", None))
-        self.setting_checkBox.setText(QCoreApplication.translate("MainWindow", u"dsdsffsd", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Change Passphrase", None))
+        self.change_passphrase_btn.setText(QCoreApplication.translate("MainWindow", u"Change Passphrase", None))
+        self.change_location_btn.setText(QCoreApplication.translate("MainWindow", u"Change Location", None))
+        self.setting_location_input.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Location", None))
+        self.hide_encrypted_files_checkbox.setText(QCoreApplication.translate("MainWindow", u"dsdsffsd", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Hide encrypted files from the file system", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Create a new password", None))
-        self.choose_location_btn_2.setText(QCoreApplication.translate("MainWindow", u"Change Password", None))
+        self.change_password_btn.setText(QCoreApplication.translate("MainWindow", u"Change Password", None))
         self.label_24.setText(QCoreApplication.translate("MainWindow", u"Decrypt Files", None))
         self.dcrypt_select_file_2.setText(QCoreApplication.translate("MainWindow", u"Slelect File", None))
         self.dcrypt_select_file.setText(QCoreApplication.translate("MainWindow", u"Slelect File", None))

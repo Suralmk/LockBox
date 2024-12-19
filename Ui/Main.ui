@@ -228,22 +228,77 @@ color: white;
 }</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
+      <widget class="QWidget" name="landingpage">
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>120</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20pt &quot;Segoe UI&quot;;
+color:rgba(240, 247, 255,0.7);
+padding-left: 15px;
+text-align:center;</string>
+        </property>
+        <property name="text">
+         <string>Landing Page</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="landingpage_get_started_btn">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>390</y>
+          <width>261</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Get Started</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
       <widget class="QWidget" name="loginpage">
        <widget class="QLabel" name="label_4">
         <property name="geometry">
          <rect>
           <x>360</x>
-          <y>120</y>
+          <y>119</y>
           <width>121</width>
-          <height>20</height>
+          <height>30</height>
          </rect>
         </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
-          <height>20</height>
+          <height>30</height>
          </size>
         </property>
         <property name="styleSheet">
@@ -256,7 +311,7 @@ text-align:center;</string>
          <string>LockBox</string>
         </property>
        </widget>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>260</x>
@@ -646,7 +701,7 @@ QCheckBox {
 </string>
           </property>
           <property name="currentIndex">
-           <number>3</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="homepage">
            <layout class="QGridLayout" name="gridLayout_9">
@@ -946,11 +1001,23 @@ background-color:rgba(240, 247, 255,0.1);
            <widget class="QLabel" name="label_20">
             <property name="geometry">
              <rect>
-              <x>20</x>
+              <x>10</x>
               <y>10</y>
-              <width>601</width>
-              <height>31</height>
+              <width>621</width>
+              <height>70</height>
              </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>70</height>
+             </size>
             </property>
             <property name="styleSheet">
              <string notr="true">font: 16pt &quot;Segoe UI&quot;;
@@ -1066,7 +1133,7 @@ background-color:rgba(240, 247, 255,0.1);
              </item>
             </layout>
            </widget>
-           <widget class="QWidget" name="">
+           <widget class="QWidget" name="layoutWidget">
             <property name="geometry">
              <rect>
               <x>14</x>
@@ -1148,7 +1215,7 @@ background-color:rgba(240, 247, 255,0.1);
              </item>
             </layout>
            </widget>
-           <widget class="QWidget" name="">
+           <widget class="QWidget" name="layoutWidget">
             <property name="geometry">
              <rect>
               <x>20</x>
@@ -1192,7 +1259,7 @@ background-color:rgba(240, 247, 255,0.1);
              </item>
             </layout>
            </widget>
-           <widget class="QWidget" name="">
+           <widget class="QWidget" name="layoutWidget">
             <property name="geometry">
              <rect>
               <x>20</x>
@@ -1254,90 +1321,21 @@ background-color:rgba(240, 247, 255,0.1);
            </widget>
           </widget>
           <widget class="QWidget" name="dcryptpage">
-           <widget class="QPushButton" name="encrypt_select_file">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>500</y>
-              <width>179</width>
-              <height>30</height>
-             </rect>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background:rgb(14, 59, 98);
-color:white;
-border-radius:5px;</string>
-            </property>
-            <property name="text">
-             <string>Select File</string>
-            </property>
-            <property name="checkable">
-             <bool>true</bool>
-            </property>
-            <property name="autoExclusive">
-             <bool>true</bool>
-            </property>
-           </widget>
-           <widget class="QPushButton" name="encrypt_start_btn">
-            <property name="geometry">
-             <rect>
-              <x>500</x>
-              <y>500</y>
-              <width>179</width>
-              <height>30</height>
-             </rect>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background:rgb(14, 59, 98);
-color:white;
-border-radius:5px;</string>
-            </property>
-            <property name="text">
-             <string>Start</string>
-            </property>
-            <property name="checkable">
-             <bool>true</bool>
-            </property>
-            <property name="autoExclusive">
-             <bool>true</bool>
-            </property>
-           </widget>
-           <widget class="QLabel" name="label_24">
-            <property name="geometry">
-             <rect>
-              <x>20</x>
-              <y>10</y>
-              <width>141</width>
-              <height>31</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 16pt &quot;Segoe UI&quot;;
-color:rgb(240, 247, 255);
-background:transparent;
-font-weight:bold;</string>
-            </property>
-            <property name="text">
-             <string>Decrypt Files</string>
-            </property>
-           </widget>
-          </widget>
-          <widget class="QWidget" name="encryptpage">
-           <layout class="QGridLayout" name="gridLayout_3">
+           <layout class="QGridLayout" name="gridLayout_14">
             <item row="0" column="0">
-             <widget class="QLabel" name="label_21">
+             <widget class="QLabel" name="label_24">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>70</height>
+               </size>
+              </property>
               <property name="styleSheet">
                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
 color:rgb(240, 247, 255);
@@ -1345,7 +1343,175 @@ background:transparent;
 font-weight:bold;</string>
               </property>
               <property name="text">
-               <string>  Encrypt Files</string>
+               <string>Decrypt Files</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QFrame" name="encrypt_file_upload_progress_bar_2">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>300</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+		text-align:center;
+color:rgba(240, 247, 255,0.7);
+         font-size:15px;
+		padding-left: 15px;
+padding: 7px 10px;
+border:none;
+background-color: rgba(55, 61, 56, 1);
+}
+
+QPushButton:hover {
+background-color:rgba(240, 247, 255,0.1);
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_10">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <property name="horizontalSpacing">
+                <number>0</number>
+               </property>
+               <property name="verticalSpacing">
+                <number>5</number>
+               </property>
+               <item row="2" column="0">
+                <widget class="QFrame" name="frame_10">
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_12">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QFrame" name="frame_11">
+                    <property name="styleSheet">
+                     <string notr="true">QFrame {
+background: rgba(0,0,0,0.1);
+border: 2px dashed rgba(102, 102, 102, 1);
+
+}</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::Shape::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Shadow::Raised</enum>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_13">
+                     <item row="1" column="0">
+                      <widget class="QPushButton" name="dcrypt_select_file_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>135</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>135</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:5px;</string>
+                       </property>
+                       <property name="text">
+                        <string>Slelect File</string>
+                       </property>
+                       <property name="checkable">
+                        <bool>true</bool>
+                       </property>
+                       <property name="autoExclusive">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QProgressBar" name="progressBar_2">
+                 <property name="value">
+                  <number>24</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QTextEdit" name="dcrypt_logs_2">
+              <property name="maximumSize">
+               <size>
+                <width>682</width>
+                <height>187</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background:rgba(0,0,0,0.8);
+border-radius:15px;
+color:rgba(255, 255, 255, 0.8);
+font: 11pt &quot;Segoe UI&quot;;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="encryptpage">
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="3" column="0" colspan="2">
+             <widget class="QTextEdit" name="dcrypt_logs">
+              <property name="maximumSize">
+               <size>
+                <width>682</width>
+                <height>187</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background:rgba(0,0,0,0.8);
+border-radius:15px;
+color:rgba(255, 255, 255, 0.8);
+font: 11pt &quot;Segoe UI&quot;;</string>
               </property>
              </widget>
             </item>
@@ -1397,7 +1563,14 @@ background-color:rgba(240, 247, 255,0.1);
                <property name="verticalSpacing">
                 <number>5</number>
                </property>
-               <item row="3" column="0">
+               <item row="1" column="0">
+                <widget class="QProgressBar" name="progressBar">
+                 <property name="value">
+                  <number>24</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
                 <widget class="QFrame" name="frame_3">
                  <property name="frameShape">
                   <enum>QFrame::Shape::StyledPanel</enum>
@@ -1471,125 +1644,31 @@ border: 2px dashed rgba(102, 102, 102, 1);
                  </layout>
                 </widget>
                </item>
-               <item row="1" column="0" alignment="Qt::AlignmentFlag::AlignRight">
-                <widget class="QFrame" name="frame_2">
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>50</height>
-                  </size>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::Shape::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Shadow::Raised</enum>
-                 </property>
-                 <layout class="QGridLayout" name="gridLayout_7">
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="horizontalSpacing">
-                   <number>15</number>
-                  </property>
-                  <property name="verticalSpacing">
-                   <number>0</number>
-                  </property>
-                  <item row="0" column="0">
-                   <widget class="QPushButton" name="dcrypt_start_btn">
-                    <property name="minimumSize">
-                     <size>
-                      <width>120</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>120</width>
-                      <height>40</height>
-                     </size>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">border-radius:5px;</string>
-                    </property>
-                    <property name="text">
-                     <string>Start</string>
-                    </property>
-                    <property name="checkable">
-                     <bool>true</bool>
-                    </property>
-                    <property name="autoExclusive">
-                     <bool>true</bool>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="1">
-                   <widget class="QPushButton" name="homepage_btn_2">
-                    <property name="minimumSize">
-                     <size>
-                      <width>120</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>120</width>
-                      <height>40</height>
-                     </size>
-                    </property>
-                    <property name="mouseTracking">
-                     <bool>true</bool>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">border-radius:5px;</string>
-                    </property>
-                    <property name="text">
-                     <string>Start</string>
-                    </property>
-                    <property name="icon">
-                     <iconset>
-                      <normaloff>:/icons/src/icons/home.png</normaloff>:/icons/src/icons/home.png</iconset>
-                    </property>
-                    <property name="checkable">
-                     <bool>true</bool>
-                    </property>
-                    <property name="checked">
-                     <bool>true</bool>
-                    </property>
-                    <property name="autoExclusive">
-                     <bool>true</bool>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item row="2" column="0">
-                <widget class="QProgressBar" name="progressBar">
-                 <property name="value">
-                  <number>24</number>
-                 </property>
-                </widget>
-               </item>
               </layout>
              </widget>
             </item>
-            <item row="3" column="0" colspan="2">
-             <widget class="QTextEdit" name="dcrypt_logs">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_21">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>70</height>
+               </size>
+              </property>
               <property name="styleSheet">
-               <string notr="true">background:rgba(0,0,0,0.8);
-border-radius:15px;
-color:rgba(255, 255, 255, 0.8);
-font: 11pt &quot;Segoe UI&quot;;</string>
+               <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color:rgb(240, 247, 255);
+background:transparent;
+font-weight:bold;</string>
+              </property>
+              <property name="text">
+               <string>Encrypt Files</string>
               </property>
              </widget>
             </item>

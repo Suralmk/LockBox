@@ -160,24 +160,42 @@ class Ui_MainWindow(object):
 "padding-left: 15px;\n"
 "color: white;\n"
 "}")
+        self.landingpage = QWidget()
+        self.landingpage.setObjectName(u"landingpage")
+        self.label_7 = QLabel(self.landingpage)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setGeometry(QRect(300, 120, 201, 41))
+        self.label_7.setStyleSheet(u"font: 20pt \"Segoe UI\";\n"
+"color:rgba(240, 247, 255,0.7);\n"
+"padding-left: 15px;\n"
+"text-align:center;")
+        self.landingpage_get_started_btn = QPushButton(self.landingpage)
+        self.landingpage_get_started_btn.setObjectName(u"landingpage_get_started_btn")
+        self.landingpage_get_started_btn.setGeometry(QRect(280, 390, 261, 35))
+        self.landingpage_get_started_btn.setMinimumSize(QSize(0, 35))
+        self.landingpage_get_started_btn.setMaximumSize(QSize(16777215, 30))
+        self.landingpage_get_started_btn.setStyleSheet(u"")
+        self.landingpage_get_started_btn.setCheckable(True)
+        self.landingpage_get_started_btn.setAutoExclusive(True)
+        self.stack_1.addWidget(self.landingpage)
         self.loginpage = QWidget()
         self.loginpage.setObjectName(u"loginpage")
         self.label_4 = QLabel(self.loginpage)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(360, 120, 121, 20))
-        self.label_4.setMaximumSize(QSize(16777215, 20))
+        self.label_4.setGeometry(QRect(360, 119, 121, 30))
+        self.label_4.setMaximumSize(QSize(16777215, 30))
         self.label_4.setStyleSheet(u"font: 20pt \"Segoe UI\";\n"
 "color:rgba(240, 247, 255,0.7);\n"
 "padding-left: 15px;\n"
 "text-align:center;")
-        self.widget = QWidget(self.loginpage)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(260, 170, 351, 151))
-        self.verticalLayout = QVBoxLayout(self.widget)
+        self.layoutWidget = QWidget(self.loginpage)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(260, 170, 351, 151))
+        self.verticalLayout = QVBoxLayout(self.layoutWidget)
         self.verticalLayout.setSpacing(10)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.label_3 = QLabel(self.widget)
+        self.label_3 = QLabel(self.layoutWidget)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setMaximumSize(QSize(16777215, 20))
         self.label_3.setStyleSheet(u"font: 12pt \"Segoe UI\";\n"
@@ -187,7 +205,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.label_3)
 
-        self.stack_1_password_input = QLineEdit(self.widget)
+        self.stack_1_password_input = QLineEdit(self.layoutWidget)
         self.stack_1_password_input.setObjectName(u"stack_1_password_input")
         self.stack_1_password_input.setMinimumSize(QSize(30, 35))
         self.stack_1_password_input.setMaximumSize(QSize(16777215, 30))
@@ -195,7 +213,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.stack_1_password_input)
 
-        self.stack_1_login_btn = QPushButton(self.widget)
+        self.stack_1_login_btn = QPushButton(self.layoutWidget)
         self.stack_1_login_btn.setObjectName(u"stack_1_login_btn")
         self.stack_1_login_btn.setMinimumSize(QSize(0, 35))
         self.stack_1_login_btn.setMaximumSize(QSize(16777215, 30))
@@ -500,19 +518,21 @@ class Ui_MainWindow(object):
         self.help_send_btn.setAutoExclusive(True)
         self.label_20 = QLabel(self.settingspage)
         self.label_20.setObjectName(u"label_20")
-        self.label_20.setGeometry(QRect(20, 10, 601, 31))
+        self.label_20.setGeometry(QRect(20, 10, 611, 70))
+        self.label_20.setMinimumSize(QSize(0, 70))
+        self.label_20.setMaximumSize(QSize(16777215, 70))
         self.label_20.setStyleSheet(u"font: 16pt \"Segoe UI\";\n"
 "color:rgba(240, 247, 255, 1);\n"
 "background:transparent;\n"
 "font-weight:bold;")
-        self.layoutWidget = QWidget(self.settingspage)
-        self.layoutWidget.setObjectName(u"layoutWidget")
-        self.layoutWidget.setGeometry(QRect(20, 190, 211, 23))
-        self.horizontalLayout_4 = QHBoxLayout(self.layoutWidget)
+        self.layoutWidget1 = QWidget(self.settingspage)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(20, 190, 211, 23))
+        self.horizontalLayout_4 = QHBoxLayout(self.layoutWidget1)
         self.horizontalLayout_4.setSpacing(15)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
-        self.setting_checkBox_2 = QCheckBox(self.layoutWidget)
+        self.setting_checkBox_2 = QCheckBox(self.layoutWidget1)
         self.setting_checkBox_2.setObjectName(u"setting_checkBox_2")
         self.setting_checkBox_2.setMinimumSize(QSize(20, 20))
         self.setting_checkBox_2.setMaximumSize(QSize(20, 20))
@@ -520,7 +540,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.setting_checkBox_2)
 
-        self.label_2 = QLabel(self.layoutWidget)
+        self.label_2 = QLabel(self.layoutWidget1)
         self.label_2.setObjectName(u"label_2")
 
         self.horizontalLayout_4.addWidget(self.label_2)
@@ -560,14 +580,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.choose_location_btn_4)
 
-        self.widget1 = QWidget(self.settingspage)
-        self.widget1.setObjectName(u"widget1")
-        self.widget1.setGeometry(QRect(14, 80, 571, 51))
-        self.horizontalLayout_2 = QHBoxLayout(self.widget1)
+        self.layoutWidget2 = QWidget(self.settingspage)
+        self.layoutWidget2.setObjectName(u"layoutWidget2")
+        self.layoutWidget2.setGeometry(QRect(14, 80, 571, 51))
+        self.horizontalLayout_2 = QHBoxLayout(self.layoutWidget2)
         self.horizontalLayout_2.setSpacing(15)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.choose_location_btn = QPushButton(self.widget1)
+        self.choose_location_btn = QPushButton(self.layoutWidget2)
         self.choose_location_btn.setObjectName(u"choose_location_btn")
         self.choose_location_btn.setMaximumSize(QSize(16777215, 40))
         self.choose_location_btn.setMouseTracking(True)
@@ -594,7 +614,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2.addWidget(self.choose_location_btn)
 
-        self.choose_location_input = QLineEdit(self.widget1)
+        self.choose_location_input = QLineEdit(self.layoutWidget2)
         self.choose_location_input.setObjectName(u"choose_location_input")
         self.choose_location_input.setMinimumSize(QSize(30, 35))
         self.choose_location_input.setMaximumSize(QSize(16777215, 30))
@@ -602,14 +622,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2.addWidget(self.choose_location_input)
 
-        self.widget2 = QWidget(self.settingspage)
-        self.widget2.setObjectName(u"widget2")
-        self.widget2.setGeometry(QRect(20, 150, 316, 23))
-        self.horizontalLayout_3 = QHBoxLayout(self.widget2)
+        self.layoutWidget3 = QWidget(self.settingspage)
+        self.layoutWidget3.setObjectName(u"layoutWidget3")
+        self.layoutWidget3.setGeometry(QRect(20, 150, 316, 23))
+        self.horizontalLayout_3 = QHBoxLayout(self.layoutWidget3)
         self.horizontalLayout_3.setSpacing(15)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.setting_checkBox = QCheckBox(self.widget2)
+        self.setting_checkBox = QCheckBox(self.layoutWidget3)
         self.setting_checkBox.setObjectName(u"setting_checkBox")
         self.setting_checkBox.setMinimumSize(QSize(20, 20))
         self.setting_checkBox.setMaximumSize(QSize(20, 20))
@@ -617,23 +637,23 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.setting_checkBox)
 
-        self.label = QLabel(self.widget2)
+        self.label = QLabel(self.layoutWidget3)
         self.label.setObjectName(u"label")
 
         self.horizontalLayout_3.addWidget(self.label)
 
-        self.widget3 = QWidget(self.settingspage)
-        self.widget3.setObjectName(u"widget3")
-        self.widget3.setGeometry(QRect(20, 230, 341, 36))
-        self.horizontalLayout_5 = QHBoxLayout(self.widget3)
+        self.layoutWidget4 = QWidget(self.settingspage)
+        self.layoutWidget4.setObjectName(u"layoutWidget4")
+        self.layoutWidget4.setGeometry(QRect(20, 230, 341, 36))
+        self.horizontalLayout_5 = QHBoxLayout(self.layoutWidget4)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.label_5 = QLabel(self.widget3)
+        self.label_5 = QLabel(self.layoutWidget4)
         self.label_5.setObjectName(u"label_5")
 
         self.horizontalLayout_5.addWidget(self.label_5)
 
-        self.choose_location_btn_2 = QPushButton(self.widget3)
+        self.choose_location_btn_2 = QPushButton(self.layoutWidget4)
         self.choose_location_btn_2.setObjectName(u"choose_location_btn_2")
         self.choose_location_btn_2.setMaximumSize(QSize(16777215, 40))
         self.choose_location_btn_2.setMouseTracking(True)
@@ -660,44 +680,110 @@ class Ui_MainWindow(object):
         self.stack_2.addWidget(self.settingspage)
         self.dcryptpage = QWidget()
         self.dcryptpage.setObjectName(u"dcryptpage")
-        self.encrypt_select_file = QPushButton(self.dcryptpage)
-        self.encrypt_select_file.setObjectName(u"encrypt_select_file")
-        self.encrypt_select_file.setGeometry(QRect(10, 500, 179, 30))
-        self.encrypt_select_file.setMaximumSize(QSize(16777215, 40))
-        self.encrypt_select_file.setStyleSheet(u"background:rgb(14, 59, 98);\n"
-"color:white;\n"
-"border-radius:5px;")
-        self.encrypt_select_file.setCheckable(True)
-        self.encrypt_select_file.setAutoExclusive(True)
-        self.encrypt_start_btn = QPushButton(self.dcryptpage)
-        self.encrypt_start_btn.setObjectName(u"encrypt_start_btn")
-        self.encrypt_start_btn.setGeometry(QRect(500, 500, 179, 30))
-        self.encrypt_start_btn.setMaximumSize(QSize(16777215, 40))
-        self.encrypt_start_btn.setStyleSheet(u"background:rgb(14, 59, 98);\n"
-"color:white;\n"
-"border-radius:5px;")
-        self.encrypt_start_btn.setCheckable(True)
-        self.encrypt_start_btn.setAutoExclusive(True)
+        self.gridLayout_14 = QGridLayout(self.dcryptpage)
+        self.gridLayout_14.setObjectName(u"gridLayout_14")
         self.label_24 = QLabel(self.dcryptpage)
         self.label_24.setObjectName(u"label_24")
-        self.label_24.setGeometry(QRect(20, 10, 141, 31))
+        self.label_24.setMinimumSize(QSize(0, 70))
+        self.label_24.setMaximumSize(QSize(16777215, 70))
         self.label_24.setStyleSheet(u"font: 16pt \"Segoe UI\";\n"
 "color:rgb(240, 247, 255);\n"
 "background:transparent;\n"
 "font-weight:bold;")
+
+        self.gridLayout_14.addWidget(self.label_24, 0, 0, 1, 1)
+
+        self.encrypt_file_upload_progress_bar_2 = QFrame(self.dcryptpage)
+        self.encrypt_file_upload_progress_bar_2.setObjectName(u"encrypt_file_upload_progress_bar_2")
+        self.encrypt_file_upload_progress_bar_2.setMinimumSize(QSize(0, 300))
+        self.encrypt_file_upload_progress_bar_2.setStyleSheet(u"QPushButton {\n"
+"		text-align:center;\n"
+"color:rgba(240, 247, 255,0.7);\n"
+"         font-size:15px;\n"
+"		padding-left: 15px;\n"
+"padding: 7px 10px;\n"
+"border:none;\n"
+"background-color: rgba(55, 61, 56, 1);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background-color:rgba(240, 247, 255,0.1);\n"
+"}")
+        self.encrypt_file_upload_progress_bar_2.setFrameShape(QFrame.Shape.StyledPanel)
+        self.encrypt_file_upload_progress_bar_2.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_10 = QGridLayout(self.encrypt_file_upload_progress_bar_2)
+        self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_10.setHorizontalSpacing(0)
+        self.gridLayout_10.setVerticalSpacing(5)
+        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.frame_10 = QFrame(self.encrypt_file_upload_progress_bar_2)
+        self.frame_10.setObjectName(u"frame_10")
+        self.frame_10.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_10.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_12 = QGridLayout(self.frame_10)
+        self.gridLayout_12.setSpacing(0)
+        self.gridLayout_12.setObjectName(u"gridLayout_12")
+        self.gridLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.frame_11 = QFrame(self.frame_10)
+        self.frame_11.setObjectName(u"frame_11")
+        self.frame_11.setStyleSheet(u"QFrame {\n"
+"background: rgba(0,0,0,0.1);\n"
+"border: 2px dashed rgba(102, 102, 102, 1);\n"
+"\n"
+"}")
+        self.frame_11.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_11.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_13 = QGridLayout(self.frame_11)
+        self.gridLayout_13.setObjectName(u"gridLayout_13")
+        self.dcrypt_select_file_2 = QPushButton(self.frame_11)
+        self.dcrypt_select_file_2.setObjectName(u"dcrypt_select_file_2")
+        self.dcrypt_select_file_2.setMinimumSize(QSize(135, 0))
+        self.dcrypt_select_file_2.setMaximumSize(QSize(135, 40))
+        self.dcrypt_select_file_2.setStyleSheet(u"border-radius:5px;")
+        self.dcrypt_select_file_2.setCheckable(True)
+        self.dcrypt_select_file_2.setAutoExclusive(True)
+
+        self.gridLayout_13.addWidget(self.dcrypt_select_file_2, 1, 0, 1, 1)
+
+
+        self.gridLayout_12.addWidget(self.frame_11, 0, 0, 1, 1)
+
+
+        self.gridLayout_10.addWidget(self.frame_10, 2, 0, 1, 1)
+
+        self.progressBar_2 = QProgressBar(self.encrypt_file_upload_progress_bar_2)
+        self.progressBar_2.setObjectName(u"progressBar_2")
+        self.progressBar_2.setValue(24)
+
+        self.gridLayout_10.addWidget(self.progressBar_2, 1, 0, 1, 1)
+
+
+        self.gridLayout_14.addWidget(self.encrypt_file_upload_progress_bar_2, 1, 0, 1, 1)
+
+        self.dcrypt_logs_2 = QTextEdit(self.dcryptpage)
+        self.dcrypt_logs_2.setObjectName(u"dcrypt_logs_2")
+        self.dcrypt_logs_2.setMaximumSize(QSize(682, 187))
+        self.dcrypt_logs_2.setStyleSheet(u"background:rgba(0,0,0,0.8);\n"
+"border-radius:15px;\n"
+"color:rgba(255, 255, 255, 0.8);\n"
+"font: 11pt \"Segoe UI\";")
+
+        self.gridLayout_14.addWidget(self.dcrypt_logs_2, 2, 0, 1, 1)
+
         self.stack_2.addWidget(self.dcryptpage)
         self.encryptpage = QWidget()
         self.encryptpage.setObjectName(u"encryptpage")
         self.gridLayout_3 = QGridLayout(self.encryptpage)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.label_21 = QLabel(self.encryptpage)
-        self.label_21.setObjectName(u"label_21")
-        self.label_21.setStyleSheet(u"font: 16pt \"Segoe UI\";\n"
-"color:rgb(240, 247, 255);\n"
-"background:transparent;\n"
-"font-weight:bold;")
+        self.dcrypt_logs = QTextEdit(self.encryptpage)
+        self.dcrypt_logs.setObjectName(u"dcrypt_logs")
+        self.dcrypt_logs.setMaximumSize(QSize(682, 187))
+        self.dcrypt_logs.setStyleSheet(u"background:rgba(0,0,0,0.8);\n"
+"border-radius:15px;\n"
+"color:rgba(255, 255, 255, 0.8);\n"
+"font: 11pt \"Segoe UI\";")
 
-        self.gridLayout_3.addWidget(self.label_21, 0, 0, 1, 1)
+        self.gridLayout_3.addWidget(self.dcrypt_logs, 3, 0, 1, 2)
 
         self.encrypt_file_upload_progress_bar = QFrame(self.encryptpage)
         self.encrypt_file_upload_progress_bar.setObjectName(u"encrypt_file_upload_progress_bar")
@@ -722,6 +808,12 @@ class Ui_MainWindow(object):
         self.gridLayout_4.setHorizontalSpacing(0)
         self.gridLayout_4.setVerticalSpacing(5)
         self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.progressBar = QProgressBar(self.encrypt_file_upload_progress_bar)
+        self.progressBar.setObjectName(u"progressBar")
+        self.progressBar.setValue(24)
+
+        self.gridLayout_4.addWidget(self.progressBar, 1, 0, 1, 1)
+
         self.frame_3 = QFrame(self.encrypt_file_upload_progress_bar)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setFrameShape(QFrame.Shape.StyledPanel)
@@ -755,63 +847,21 @@ class Ui_MainWindow(object):
         self.gridLayout_5.addWidget(self.frame_4, 0, 0, 1, 1)
 
 
-        self.gridLayout_4.addWidget(self.frame_3, 3, 0, 1, 1)
-
-        self.frame_2 = QFrame(self.encrypt_file_upload_progress_bar)
-        self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setMaximumSize(QSize(16777215, 50))
-        self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
-        self.gridLayout_7 = QGridLayout(self.frame_2)
-        self.gridLayout_7.setObjectName(u"gridLayout_7")
-        self.gridLayout_7.setHorizontalSpacing(15)
-        self.gridLayout_7.setVerticalSpacing(0)
-        self.gridLayout_7.setContentsMargins(0, 0, 0, 0)
-        self.dcrypt_start_btn = QPushButton(self.frame_2)
-        self.dcrypt_start_btn.setObjectName(u"dcrypt_start_btn")
-        self.dcrypt_start_btn.setMinimumSize(QSize(120, 0))
-        self.dcrypt_start_btn.setMaximumSize(QSize(120, 40))
-        self.dcrypt_start_btn.setStyleSheet(u"border-radius:5px;")
-        self.dcrypt_start_btn.setCheckable(True)
-        self.dcrypt_start_btn.setAutoExclusive(True)
-
-        self.gridLayout_7.addWidget(self.dcrypt_start_btn, 0, 0, 1, 1)
-
-        self.homepage_btn_2 = QPushButton(self.frame_2)
-        self.homepage_btn_2.setObjectName(u"homepage_btn_2")
-        self.homepage_btn_2.setMinimumSize(QSize(120, 0))
-        self.homepage_btn_2.setMaximumSize(QSize(120, 40))
-        self.homepage_btn_2.setMouseTracking(True)
-        self.homepage_btn_2.setStyleSheet(u"border-radius:5px;")
-        icon8 = QIcon()
-        icon8.addFile(u":/icons/src/icons/home.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.homepage_btn_2.setIcon(icon8)
-        self.homepage_btn_2.setCheckable(True)
-        self.homepage_btn_2.setChecked(True)
-        self.homepage_btn_2.setAutoExclusive(True)
-
-        self.gridLayout_7.addWidget(self.homepage_btn_2, 0, 1, 1, 1)
-
-
-        self.gridLayout_4.addWidget(self.frame_2, 1, 0, 1, 1, Qt.AlignmentFlag.AlignRight)
-
-        self.progressBar = QProgressBar(self.encrypt_file_upload_progress_bar)
-        self.progressBar.setObjectName(u"progressBar")
-        self.progressBar.setValue(24)
-
-        self.gridLayout_4.addWidget(self.progressBar, 2, 0, 1, 1)
+        self.gridLayout_4.addWidget(self.frame_3, 2, 0, 1, 1)
 
 
         self.gridLayout_3.addWidget(self.encrypt_file_upload_progress_bar, 1, 0, 1, 2)
 
-        self.dcrypt_logs = QTextEdit(self.encryptpage)
-        self.dcrypt_logs.setObjectName(u"dcrypt_logs")
-        self.dcrypt_logs.setStyleSheet(u"background:rgba(0,0,0,0.8);\n"
-"border-radius:15px;\n"
-"color:rgba(255, 255, 255, 0.8);\n"
-"font: 11pt \"Segoe UI\";")
+        self.label_21 = QLabel(self.encryptpage)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setMinimumSize(QSize(0, 70))
+        self.label_21.setMaximumSize(QSize(16777215, 70))
+        self.label_21.setStyleSheet(u"font: 16pt \"Segoe UI\";\n"
+"color:rgb(240, 247, 255);\n"
+"background:transparent;\n"
+"font-weight:bold;")
 
-        self.gridLayout_3.addWidget(self.dcrypt_logs, 3, 0, 1, 2)
+        self.gridLayout_3.addWidget(self.label_21, 0, 0, 1, 2)
 
         self.stack_2.addWidget(self.encryptpage)
 
@@ -827,8 +877,8 @@ class Ui_MainWindow(object):
         self.minimize_btn.clicked.connect(MainWindow.showMinimized)
         self.close_btn.clicked.connect(MainWindow.close)
 
-        self.stack_1.setCurrentIndex(1)
-        self.stack_2.setCurrentIndex(3)
+        self.stack_1.setCurrentIndex(2)
+        self.stack_2.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -852,6 +902,8 @@ class Ui_MainWindow(object):
         self.minimize_btn.setText("")
         self.close_btn.setText("")
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"LockBox", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Landing Page", None))
+        self.landingpage_get_started_btn.setText(QCoreApplication.translate("MainWindow", u"Get Started", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"LockBox", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Input Password", None))
         self.stack_1_password_input.setPlaceholderText(QCoreApplication.translate("MainWindow", u"password", None))
@@ -882,12 +934,9 @@ class Ui_MainWindow(object):
         self.label.setText(QCoreApplication.translate("MainWindow", u"Hide encrypted files from the file system", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Create a new password", None))
         self.choose_location_btn_2.setText(QCoreApplication.translate("MainWindow", u"Change Password", None))
-        self.encrypt_select_file.setText(QCoreApplication.translate("MainWindow", u"Select File", None))
-        self.encrypt_start_btn.setText(QCoreApplication.translate("MainWindow", u"Start", None))
         self.label_24.setText(QCoreApplication.translate("MainWindow", u"Decrypt Files", None))
-        self.label_21.setText(QCoreApplication.translate("MainWindow", u"  Encrypt Files", None))
+        self.dcrypt_select_file_2.setText(QCoreApplication.translate("MainWindow", u"Slelect File", None))
         self.dcrypt_select_file.setText(QCoreApplication.translate("MainWindow", u"Slelect File", None))
-        self.dcrypt_start_btn.setText(QCoreApplication.translate("MainWindow", u"Start", None))
-        self.homepage_btn_2.setText(QCoreApplication.translate("MainWindow", u"Start", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Encrypt Files", None))
     # retranslateUi
 

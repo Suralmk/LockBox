@@ -17,7 +17,7 @@ class StartApp(Ui_starterDialog,  QDialog):
         self.passphrasepage_next_btn.clicked.connect(self.handle_passphrasepage_next)
         self.recovery_page_next.clicked.connect(lambda : self.starterStackWidget.setCurrentIndex(4))
         self.success_page_next.clicked.connect(lambda: self.accept())
-        
+
         # Center the dialog on the parent
         self.resize(300, 150)
         parent_center = parent.geometry().center()

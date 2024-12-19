@@ -217,7 +217,7 @@ color: white;
     }</string>
         </property>
         <property name="currentIndex">
-         <number>3</number>
+         <number>2</number>
         </property>
         <widget class="QWidget" name="filelocationpage">
          <widget class="QPushButton" name="choose_location_next">
@@ -254,7 +254,7 @@ color: white;
            <bool>true</bool>
           </property>
          </widget>
-         <widget class="QWidget" name="">
+         <widget class="QWidget" name="layoutWidget">
           <property name="geometry">
            <rect>
             <x>20</x>
@@ -524,7 +524,7 @@ background:transparent;
            <string>repeat password</string>
           </property>
          </widget>
-         <widget class="QWidget" name="">
+         <widget class="QWidget" name="layoutWidget">
           <property name="geometry">
            <rect>
             <x>20</x>
@@ -866,7 +866,7 @@ background:transparent;
 </string>
           </property>
           <property name="text">
-           <string>Backup with a secret phrase</string>
+           <string>Backup with a secret phrasee</string>
           </property>
          </widget>
         </widget>
@@ -1092,7 +1092,7 @@ background:transparent;
            <bool>true</bool>
           </property>
          </widget>
-         <widget class="QWidget" name="">
+         <widget class="QWidget" name="layoutWidget">
           <property name="geometry">
            <rect>
             <x>200</x>

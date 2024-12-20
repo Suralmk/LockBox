@@ -1,46 +1,29 @@
-from PySide6.QtWidgets import QApplication, QLabel, QVBoxLayout, QWidget
-from PySide6.QtCore import Qt
+from PySide6.QtWidgets import QApplication, QMainWindow, QDialog
+from PySide6.QtGui import QAction
 
-class MainWindow(QWidget):
+class Dialog(QDialog):
+    def __init__(self, parent):
+        QDialog.__init__(self, parent)
+
+class MainWindow(QMainWindow):
     def __init__(self):
-        super().__init__()
-        self.init_ui()
+        QMainWindow.__init__(self)
+        self.setGeometry(0, 0, 500, 500)
 
-    def init_ui(self):
-        # Create a QLabel with long text
-        label = QLabel(
-            "This is a very long text that should wrap to the next line when it exceeds the width of the QLabel."
-        )
-        
-        # Enable word wrap
-        label.setWordWrap(True)
-        label.setAlignment(Qt.AlignTop | Qt.AlignLeft)
+        menu = self.menuBar()
+        submenu = menu.addMenu("Submenu")
+        self.action_open_dialog = QAction("Open Dialog", self)
+        self.action_open_dialog.setCheckable(False)
+        self.action_open_dialog.triggered.connect(self.open_dialog)
+        submenu.addAction(self.action_open_dialog)
 
-        # Optional: Set fixed width for demonstration
-        label.setFixedWidth(300)
+    def open_dialog(self):
+        dialog = Dialog(self)
+        dialog.exec()
 
-        # Style the QLabel (optional)
-        label.setStyleSheet("""
-            QLabel {
-                font-size: 14px;
-                color: #333;
-                border: 1px solid #ccc;
-                padding: 5px;
-            }
-        """)
+if __name__ == '__main__':
 
-        # Layout
-        layout = QVBoxLayout()
-        layout.addWidget(label)
-        self.setLayout(layout)
-
-        self.setWindowTitle("QLabel Word Wrap Example")
-        self.resize(400, 200)
-
-
-# Run the application
-if __name__ == "__main__":
-    app = QApplication([])
-    window = MainWindow()
-    window.show()
+    app = QApplication()
+    w = MainWindow()
+    w.show()
     app.exec()

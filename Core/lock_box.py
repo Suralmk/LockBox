@@ -24,11 +24,12 @@ class LockBox(Ui_MainWindow, QMainWindow):
         # Set the window flags to hide the native title ba
         #self.setWindowFlags(Qt.FramelessWindowHint)
 
+        # Center the app in the center of the screen
+        screen_center = self.screen().geometry().center()
+        self.move(screen_center - QPoint(self.width() // 2, self.height() // 2))
+
         # Initialize variables for mouse dragging
         self.old_pos = None
-
-        # Install an event filter on the title bar
-        self.title_bar.installEventFilter(self)
 
         # LockBox Login
         self.stack_1_login_btn.clicked.connect(self.handle_lockbox_login)
@@ -83,7 +84,7 @@ class LockBox(Ui_MainWindow, QMainWindow):
             self.show_message("Welcome to the club ma men u are real super here welcome to here man")
 
     def show_message(self,message):
-        message_box = MessageBox(message)
+        message_box = MessageBox(message=message, parent=self)
         result = message_box.exec()
         if int(result) == 1:
             print("yes")

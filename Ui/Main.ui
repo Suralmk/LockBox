@@ -49,161 +49,6 @@
      <number>0</number>
     </property>
     <item row="0" column="0">
-     <widget class="QWidget" name="title_bar" native="true">
-      <property name="minimumSize">
-       <size>
-        <width>900</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QWidget {
-border-bottom: 1px solid rgba(102,102,102,0.3);
-background: rgba(20, 24, 21, 0.3) ;
-
-}
-QPushButton {
-background: transparent;
-color:white;
-font: 700 14pt &quot;Segoe UI&quot;;
-border:none;
-}
-
-QPushButton:hover {
-background:  rgba(48,50,51,1);
-
-}</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_8">
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <item row="0" column="2">
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QPushButton" name="minimize_btn">
-           <property name="minimumSize">
-            <size>
-             <width>45</width>
-             <height>3</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>40</width>
-             <height>39</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true"/>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset resource="src/resources.qrc">
-             <normaloff>:/icons/icons/subtract-line.png</normaloff>:/icons/icons/subtract-line.png</iconset>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="close_btn">
-           <property name="minimumSize">
-            <size>
-             <width>45</width>
-             <height>39</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>40</width>
-             <height>39</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton:hover {
-background:   rgba(227,25,25,1);
-
-}</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset resource="src/resources.qrc">
-             <normaloff>:/icons/icons/close-large-line.png</normaloff>:/icons/icons/close-large-line.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>15</width>
-             <height>15</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label_12">
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>40</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 16pt &quot;Segoe UI&quot;;
-color:rgba(240, 247, 255,0.7);
-padding-left: 15px;
-background: transparent;
-</string>
-         </property>
-         <property name="text">
-          <string>LockBox</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Orientation::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>599</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item row="1" column="0">
      <widget class="QStackedWidget" name="stack_1">
       <property name="styleSheet">
        <string notr="true">QPushButton {
@@ -311,7 +156,7 @@ text-align:center;</string>
          <string>LockBox</string>
         </property>
        </widget>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>261</x>
@@ -405,7 +250,7 @@ background:transparent;
              </property>
             </widget>
            </item>
-           <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <item alignment="">
             <widget class="QPushButton" name="pushButton">
              <property name="styleSheet">
               <string notr="true">
@@ -448,10 +293,16 @@ QPushButton:hover {
         </property>
         <item row="0" column="0">
          <widget class="QWidget" name="widget_4" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>600</height>
+           </size>
+          </property>
           <property name="maximumSize">
            <size>
             <width>200</width>
-            <height>550</height>
+            <height>1784785</height>
            </size>
           </property>
           <property name="styleSheet">
@@ -552,7 +403,7 @@ background-color:rgba(240, 247, 255,0.1);
                <string>Home</string>
               </property>
               <property name="icon">
-               <iconset resource="src/resources.qrc">
+               <iconset resource="../src/resources.qrc">
                 <normaloff>:/icons/icons/home.png</normaloff>:/icons/icons/home.png</iconset>
               </property>
               <property name="checkable">
@@ -581,7 +432,7 @@ background-color:rgba(240, 247, 255,0.1);
                <string>Encrypt Files</string>
               </property>
               <property name="icon">
-               <iconset resource="src/resources.qrc">
+               <iconset resource="../src/resources.qrc">
                 <normaloff>:/icons/icons/lock.png</normaloff>:/icons/icons/lock.png</iconset>
               </property>
               <property name="checkable">
@@ -607,7 +458,7 @@ background-color:rgba(240, 247, 255,0.1);
                <string>Dcrypt Files</string>
               </property>
               <property name="icon">
-               <iconset resource="src/resources.qrc">
+               <iconset resource="../src/resources.qrc">
                 <normaloff>:/icons/icons/unlock.png</normaloff>:/icons/icons/unlock.png</iconset>
               </property>
               <property name="checkable">
@@ -633,7 +484,7 @@ background-color:rgba(240, 247, 255,0.1);
                <string>Settings</string>
               </property>
               <property name="icon">
-               <iconset resource="src/resources.qrc">
+               <iconset resource="../src/resources.qrc">
                 <normaloff>:/icons/icons/settings-3-line.png</normaloff>:/icons/icons/settings-3-line.png</iconset>
               </property>
               <property name="checkable">
@@ -646,14 +497,52 @@ background-color:rgba(240, 247, 255,0.1);
             </item>
            </layout>
           </widget>
+          <widget class="QLabel" name="label_12">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>200</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color:rgba(240, 247, 255,0.7);
+padding-left: 15px;
+background: transparent;
+</string>
+           </property>
+           <property name="text">
+            <string>LockBox</string>
+           </property>
+          </widget>
          </widget>
         </item>
         <item row="0" column="1">
          <widget class="QStackedWidget" name="stack_2">
-          <property name="maximumSize">
+          <property name="minimumSize">
            <size>
             <width>700</width>
             <height>550</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1685487</width>
+            <height>1685884</height>
            </size>
           </property>
           <property name="styleSheet">
@@ -764,7 +653,7 @@ QCheckBox {
                  <x>0</x>
                  <y>0</y>
                  <width>700</width>
-                 <height>545</height>
+                 <height>550</height>
                 </rect>
                </property>
                <widget class="QLabel" name="label_14">
@@ -1067,8 +956,8 @@ font-weight:bold;</string>
              <rect>
               <x>20</x>
               <y>190</y>
-              <width>211</width>
-              <height>23</height>
+              <width>212</width>
+              <height>24</height>
              </rect>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -1210,7 +1099,7 @@ background-color:rgba(240, 247, 255,0.1);
                 <string>Change Location</string>
                </property>
                <property name="icon">
-                <iconset resource="src/resources.qrc">
+                <iconset resource="../src/resources.qrc">
                  <normaloff>:/icons/icons/folder-3-fill.png</normaloff>:/icons/icons/folder-3-fill.png</iconset>
                </property>
                <property name="checkable">
@@ -1253,8 +1142,8 @@ background-color:rgba(240, 247, 255,0.1);
              <rect>
               <x>20</x>
               <y>150</y>
-              <width>316</width>
-              <height>23</height>
+              <width>340</width>
+              <height>24</height>
              </rect>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -1782,40 +1671,7 @@ font-weight:bold;</string>
   </action>
  </widget>
  <resources>
-  <include location="src/resources.qrc"/>
+  <include location="../src/resources.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>minimize_btn</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>showMinimized()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>839</x>
-     <y>23</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>940</x>
-     <y>84</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>close_btn</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>881</x>
-     <y>19</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>926</x>
-     <y>77</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

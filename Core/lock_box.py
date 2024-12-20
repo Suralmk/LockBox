@@ -22,7 +22,7 @@ class LockBox(Ui_MainWindow, QMainWindow):
         self.overlay.setVisible(False)
 
         # Set the window flags to hide the native title ba
-        self.setWindowFlags(Qt.FramelessWindowHint)
+        #self.setWindowFlags(Qt.FramelessWindowHint)
 
         # Initialize variables for mouse dragging
         self.old_pos = None

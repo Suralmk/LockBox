@@ -119,7 +119,7 @@ background:  rgba(48,50,51,1);
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="src/resources.qrc">
+            <iconset resource="../src/resources.qrc">
              <normaloff>:/icons/icons/subtract-line.png</normaloff>:/icons/icons/subtract-line.png</iconset>
            </property>
           </widget>
@@ -148,7 +148,7 @@ background:   rgba(227,25,25,1);
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="src/resources.qrc">
+            <iconset resource="../src/resources.qrc">
              <normaloff>:/icons/icons/close-large-line.png</normaloff>:/icons/icons/close-large-line.png</iconset>
            </property>
            <property name="iconSize">
@@ -311,7 +311,7 @@ text-align:center;</string>
          <string>LockBox</string>
         </property>
        </widget>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>261</x>
@@ -552,7 +552,7 @@ background-color:rgba(240, 247, 255,0.1);
                <string>Home</string>
               </property>
               <property name="icon">
-               <iconset resource="src/resources.qrc">
+               <iconset resource="../src/resources.qrc">
                 <normaloff>:/icons/icons/home.png</normaloff>:/icons/icons/home.png</iconset>
               </property>
               <property name="checkable">
@@ -581,7 +581,7 @@ background-color:rgba(240, 247, 255,0.1);
                <string>Encrypt Files</string>
               </property>
               <property name="icon">
-               <iconset resource="src/resources.qrc">
+               <iconset resource="../src/resources.qrc">
                 <normaloff>:/icons/icons/lock.png</normaloff>:/icons/icons/lock.png</iconset>
               </property>
               <property name="checkable">
@@ -607,7 +607,7 @@ background-color:rgba(240, 247, 255,0.1);
                <string>Dcrypt Files</string>
               </property>
               <property name="icon">
-               <iconset resource="src/resources.qrc">
+               <iconset resource="../src/resources.qrc">
                 <normaloff>:/icons/icons/unlock.png</normaloff>:/icons/icons/unlock.png</iconset>
               </property>
               <property name="checkable">
@@ -633,7 +633,7 @@ background-color:rgba(240, 247, 255,0.1);
                <string>Settings</string>
               </property>
               <property name="icon">
-               <iconset resource="src/resources.qrc">
+               <iconset resource="../src/resources.qrc">
                 <normaloff>:/icons/icons/settings-3-line.png</normaloff>:/icons/icons/settings-3-line.png</iconset>
               </property>
               <property name="checkable">
@@ -734,7 +734,7 @@ QCheckBox {
 </string>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="homepage">
            <layout class="QGridLayout" name="gridLayout_9">
@@ -772,17 +772,30 @@ QCheckBox {
                  <rect>
                   <x>10</x>
                   <y>20</y>
-                  <width>351</width>
-                  <height>31</height>
+                  <width>121</width>
+                  <height>70</height>
                  </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>70</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>70</height>
+                 </size>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">font: 16pt &quot;Segoe UI&quot;;
-color:rgba(240, 247, 255,1);
-background:transparent;</string>
+color:rgba(240, 247, 255, 1);
+background:transparent;
+font-weight:bold;</string>
                 </property>
                 <property name="text">
-                 <string>Encrypt Files and Increase your safty</string>
+                 <string>Dashboard</string>
                 </property>
                </widget>
                <widget class="QFrame" name="frame_5">
@@ -801,25 +814,6 @@ background:transparent;</string>
                 <property name="frameShape">
                  <enum>QFrame::Shape::NoFrame</enum>
                 </property>
-                <widget class="QLabel" name="label_19">
-                 <property name="geometry">
-                  <rect>
-                   <x>10</x>
-                   <y>10</y>
-                   <width>121</width>
-                   <height>31</height>
-                  </rect>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">font: 12pt &quot;Segoe UI&quot;;
-color:rgba(240, 247, 255,1);
-background:transparent;
-font-weight:bold;</string>
-                 </property>
-                 <property name="text">
-                  <string>Encrypted Files</string>
-                 </property>
-                </widget>
                 <widget class="QLabel" name="label_25">
                  <property name="geometry">
                   <rect>
@@ -838,6 +832,38 @@ font-weight:bold;</string>
                  <property name="text">
                   <string>50</string>
                  </property>
+                </widget>
+                <widget class="QWidget" name="">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>187</width>
+                   <height>23</height>
+                  </rect>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_7">
+                  <item>
+                   <widget class="QLabel" name="label_8">
+                    <property name="text">
+                     <string>TextLabel</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_19">
+                    <property name="styleSheet">
+                     <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+color:rgba(240, 247, 255,1);
+background:transparent;
+font-weight:bold;</string>
+                    </property>
+                    <property name="text">
+                     <string>Encrypted Files</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
                 </widget>
                </widget>
                <widget class="QFrame" name="frame_8">
@@ -883,7 +909,7 @@ color:black;</string>
                  </rect>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">background:rgba(69, 72, 208, 0.5)</string>
+                 <string notr="true">background: #141815;</string>
                 </property>
                 <property name="frameShape">
                  <enum>QFrame::Shape::NoFrame</enum>
@@ -904,7 +930,7 @@ background:transparent;
 font-weight:bold;</string>
                  </property>
                  <property name="text">
-                  <string>File Type</string>
+                  <string>Decrypted Files</string>
                  </property>
                 </widget>
                 <widget class="QLabel" name="label_28">
@@ -937,7 +963,7 @@ font-weight:bold;</string>
                  </rect>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">background:rgba(189, 13, 1, 0.5)</string>
+                 <string notr="true">background:#616961;</string>
                 </property>
                 <property name="frameShape">
                  <enum>QFrame::Shape::NoFrame</enum>
@@ -1210,7 +1236,7 @@ background-color:rgba(240, 247, 255,0.1);
                 <string>Change Location</string>
                </property>
                <property name="icon">
-                <iconset resource="src/resources.qrc">
+                <iconset resource="../src/resources.qrc">
                  <normaloff>:/icons/icons/folder-3-fill.png</normaloff>:/icons/icons/folder-3-fill.png</iconset>
                </property>
                <property name="checkable">
@@ -1782,7 +1808,7 @@ font-weight:bold;</string>
   </action>
  </widget>
  <resources>
-  <include location="src/resources.qrc"/>
+  <include location="../src/resources.qrc"/>
  </resources>
  <connections>
   <connection>

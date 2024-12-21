@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="icons">
+    <file>icons/file-2-line.png</file>
+    <file>icons/history-fill.png</file>
+    <file>icons/key-2-line.png</file>
+    <file>icons/lock-unlock-line.png</file>
     <file>icons/settings-3-line.png</file>
     <file>icons/check-line.png</file>
     <file>icons/file-copy-line (1).png</file>

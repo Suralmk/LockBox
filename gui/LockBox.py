@@ -188,17 +188,17 @@ class Ui_MainWindow(object):
 "color:rgba(240, 247, 255,0.7);\n"
 "padding-left: 15px;\n"
 "text-align:center;")
-        self.widget = QWidget(self.loginpage)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(261, 171, 381, 191))
-        self.verticalLayout_4 = QVBoxLayout(self.widget)
+        self.layoutWidget = QWidget(self.loginpage)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(261, 171, 381, 191))
+        self.verticalLayout_4 = QVBoxLayout(self.layoutWidget)
         self.verticalLayout_4.setSpacing(20)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setSpacing(10)
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.label_3 = QLabel(self.widget)
+        self.label_3 = QLabel(self.layoutWidget)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setMaximumSize(QSize(16777215, 20))
         self.label_3.setStyleSheet(u"font: 12pt \"Segoe UI\";\n"
@@ -208,7 +208,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.label_3)
 
-        self.stack_1_password_input = QLineEdit(self.widget)
+        self.stack_1_password_input = QLineEdit(self.layoutWidget)
         self.stack_1_password_input.setObjectName(u"stack_1_password_input")
         self.stack_1_password_input.setMinimumSize(QSize(30, 35))
         self.stack_1_password_input.setMaximumSize(QSize(16777215, 30))
@@ -222,7 +222,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_3 = QVBoxLayout()
         self.verticalLayout_3.setSpacing(10)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.stack_1_login_btn = QPushButton(self.widget)
+        self.stack_1_login_btn = QPushButton(self.layoutWidget)
         self.stack_1_login_btn.setObjectName(u"stack_1_login_btn")
         self.stack_1_login_btn.setMinimumSize(QSize(0, 35))
         self.stack_1_login_btn.setMaximumSize(QSize(16777215, 30))
@@ -232,7 +232,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_3.addWidget(self.stack_1_login_btn)
 
-        self.pushButton = QPushButton(self.widget)
+        self.pushButton = QPushButton(self.layoutWidget)
         self.pushButton.setObjectName(u"pushButton")
         self.pushButton.setStyleSheet(u"\n"
 "QPushButton {\n"
@@ -444,65 +444,112 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
         self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 700, 545))
+        self.gridLayout_7 = QGridLayout(self.scrollAreaWidgetContents)
+        self.gridLayout_7.setSpacing(0)
+        self.gridLayout_7.setObjectName(u"gridLayout_7")
+        self.gridLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_7 = QVBoxLayout()
+        self.verticalLayout_7.setSpacing(20)
+        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
         self.label_14 = QLabel(self.scrollAreaWidgetContents)
         self.label_14.setObjectName(u"label_14")
-        self.label_14.setGeometry(QRect(10, 20, 351, 31))
+        self.label_14.setMinimumSize(QSize(0, 70))
+        self.label_14.setMaximumSize(QSize(16777215, 70))
         self.label_14.setStyleSheet(u"font: 16pt \"Segoe UI\";\n"
-"color:rgba(240, 247, 255,1);\n"
-"background:transparent;")
+"color:rgba(240, 247, 255, 1);\n"
+"background:transparent;\n"
+"font-weight:bold;")
+
+        self.verticalLayout_7.addWidget(self.label_14)
+
+        self.verticalLayout_6 = QVBoxLayout()
+        self.verticalLayout_6.setSpacing(28)
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
+        self.horizontalLayout_7 = QHBoxLayout()
+        self.horizontalLayout_7.setSpacing(25)
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.frame_5 = QFrame(self.scrollAreaWidgetContents)
         self.frame_5.setObjectName(u"frame_5")
-        self.frame_5.setGeometry(QRect(20, 110, 201, 131))
+        self.frame_5.setMinimumSize(QSize(200, 130))
+        self.frame_5.setMaximumSize(QSize(200, 130))
         self.frame_5.setStyleSheet(u"background-color: rgba(32,144,46,0.5);\n"
 "")
         self.frame_5.setFrameShape(QFrame.Shape.NoFrame)
         self.label_19 = QLabel(self.frame_5)
         self.label_19.setObjectName(u"label_19")
-        self.label_19.setGeometry(QRect(10, 10, 121, 31))
-        self.label_19.setStyleSheet(u"font: 12pt \"Segoe UI\";\n"
-"color:rgba(240, 247, 255,1);\n"
+        self.label_19.setGeometry(QRect(71, 21, 102, 27))
+        self.label_19.setStyleSheet(u"border-radius:0px;\n"
 "background:transparent;\n"
-"font-weight:bold;")
+"font: 12pt \"Segoe UI\";\n"
+"font-weight:bold;\n"
+"background:none;")
         self.label_25 = QLabel(self.frame_5)
         self.label_25.setObjectName(u"label_25")
-        self.label_25.setGeometry(QRect(10, 50, 51, 21))
+        self.label_25.setGeometry(QRect(20, 80, 141, 41))
         self.label_25.setStyleSheet(u"border-radius:0px;\n"
 "background:transparent;\n"
 "font: 20pt \"Segoe UI\";\n"
+"font-weight:bold;\n"
+"color:white;")
+        self.label_22 = QLabel(self.frame_5)
+        self.label_22.setObjectName(u"label_22")
+        self.label_22.setGeometry(QRect(70, 50, 42, 27))
+        self.label_22.setStyleSheet(u"border-radius:0px;\n"
+"background:transparent;\n"
+"font: 12pt \"Segoe UI\";\n"
 "font-weight:bold;")
-        self.frame_8 = QFrame(self.scrollAreaWidgetContents)
-        self.frame_8.setObjectName(u"frame_8")
-        self.frame_8.setGeometry(QRect(20, 260, 661, 181))
-        self.frame_8.setStyleSheet(u"background:white;")
-        self.frame_8.setFrameShape(QFrame.Shape.NoFrame)
-        self.label_26 = QLabel(self.frame_8)
-        self.label_26.setObjectName(u"label_26")
-        self.label_26.setGeometry(QRect(20, 20, 141, 21))
-        self.label_26.setStyleSheet(u"font: 16pt \"Segoe UI\";\n"
-"color:black;")
+        self.label_8 = QLabel(self.frame_5)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setGeometry(QRect(20, 30, 31, 31))
+        self.label_8.setStyleSheet(u"background:none;")
+        self.label_8.setPixmap(QPixmap(u":/icons/icons/key-2-line.png"))
+        self.label_8.setScaledContents(True)
+
+        self.horizontalLayout_7.addWidget(self.frame_5)
+
         self.frame_6 = QFrame(self.scrollAreaWidgetContents)
         self.frame_6.setObjectName(u"frame_6")
-        self.frame_6.setGeometry(QRect(250, 110, 201, 131))
-        self.frame_6.setStyleSheet(u"background:rgba(69, 72, 208, 0.5)")
+        self.frame_6.setMinimumSize(QSize(200, 130))
+        self.frame_6.setMaximumSize(QSize(200, 130))
+        self.frame_6.setStyleSheet(u"background: #141815;")
         self.frame_6.setFrameShape(QFrame.Shape.NoFrame)
+        self.label_23 = QLabel(self.frame_6)
+        self.label_23.setObjectName(u"label_23")
+        self.label_23.setGeometry(QRect(81, 21, 102, 27))
+        self.label_23.setStyleSheet(u"border-radius:0px;\n"
+"background:transparent;\n"
+"font: 12pt \"Segoe UI\";\n"
+"font-weight:bold;\n"
+"background:none;")
+        self.label_9 = QLabel(self.frame_6)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setGeometry(QRect(20, 30, 31, 31))
+        self.label_9.setStyleSheet(u"background:none;")
+        self.label_9.setPixmap(QPixmap(u":/icons/icons/lock-unlock-line.png"))
+        self.label_9.setScaledContents(True)
         self.label_27 = QLabel(self.frame_6)
         self.label_27.setObjectName(u"label_27")
-        self.label_27.setGeometry(QRect(10, 10, 121, 31))
-        self.label_27.setStyleSheet(u"font: 12pt \"Segoe UI\";\n"
-"color:rgba(240, 247, 255,1);\n"
+        self.label_27.setGeometry(QRect(80, 50, 42, 27))
+        self.label_27.setStyleSheet(u"border-radius:0px;\n"
 "background:transparent;\n"
+"font: 12pt \"Segoe UI\";\n"
 "font-weight:bold;")
         self.label_28 = QLabel(self.frame_6)
         self.label_28.setObjectName(u"label_28")
-        self.label_28.setGeometry(QRect(10, 50, 51, 21))
+        self.label_28.setGeometry(QRect(20, 80, 151, 41))
         self.label_28.setStyleSheet(u"border-radius:0px;\n"
 "background:transparent;\n"
-"font: 18pt \"Segoe UI\";\n"
-"font-weight:bold;")
+"font: 20pt \"Segoe UI\";\n"
+"font-weight:bold;\n"
+"color:white;")
+
+        self.horizontalLayout_7.addWidget(self.frame_6)
+
         self.frame_7 = QFrame(self.scrollAreaWidgetContents)
         self.frame_7.setObjectName(u"frame_7")
-        self.frame_7.setGeometry(QRect(480, 110, 201, 131))
-        self.frame_7.setStyleSheet(u"background:rgba(189, 13, 1, 0.5)")
+        self.frame_7.setMinimumSize(QSize(200, 130))
+        self.frame_7.setMaximumSize(QSize(200, 130))
+        self.frame_7.setStyleSheet(u"background:#616961;")
         self.frame_7.setFrameShape(QFrame.Shape.NoFrame)
         self.label_29 = QLabel(self.frame_7)
         self.label_29.setObjectName(u"label_29")
@@ -511,12 +558,63 @@ class Ui_MainWindow(object):
 "color:rgba(240, 247, 255,1);\n"
 "background:transparent;\n"
 "font-weight:bold;")
+        self.label_31 = QLabel(self.frame_7)
+        self.label_31.setObjectName(u"label_31")
+        self.label_31.setGeometry(QRect(20, 70, 141, 41))
+        self.label_31.setStyleSheet(u"border-radius:0px;\n"
+"background:transparent;\n"
+"font: 20pt \"Segoe UI\";\n"
+"font-weight:bold;\n"
+"color:white;")
+
+        self.horizontalLayout_7.addWidget(self.frame_7)
+
+
+        self.verticalLayout_6.addLayout(self.horizontalLayout_7)
+
+        self.verticalLayout_5 = QVBoxLayout()
+        self.verticalLayout_5.setSpacing(15)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.label_15 = QLabel(self.scrollAreaWidgetContents)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setMinimumSize(QSize(0, 0))
+        self.label_15.setMaximumSize(QSize(16777215, 70))
+        self.label_15.setStyleSheet(u"border-radius:0px;\n"
+"background:transparent;\n"
+"font: 12pt \"Segoe UI\";\n"
+"font-weight:bold;\n"
+"background:none;")
+
+        self.verticalLayout_5.addWidget(self.label_15)
+
+        self.frame = QFrame(self.scrollAreaWidgetContents)
+        self.frame.setObjectName(u"frame")
+        self.frame.setMinimumSize(QSize(0, 150))
+        self.frame.setMaximumSize(QSize(16777215, 150))
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.verticalLayout_5.addWidget(self.frame)
+
+
+        self.verticalLayout_6.addLayout(self.verticalLayout_5)
+
+
+        self.verticalLayout_7.addLayout(self.verticalLayout_6)
+
+
+        self.gridLayout_7.addLayout(self.verticalLayout_7, 0, 0, 1, 1)
+
         self.label_30 = QLabel(self.scrollAreaWidgetContents)
         self.label_30.setObjectName(u"label_30")
-        self.label_30.setGeometry(QRect(30, 460, 561, 31))
-        self.label_30.setStyleSheet(u"font: 12pt \"Segoe UI\";\n"
-"color:black;\n"
-"background:transparent;")
+        self.label_30.setStyleSheet(u"border-radius:0px;\n"
+"background:transparent;\n"
+"font: 12pt \"Segoe UI\";\n"
+"font-weight:bold;\n"
+"background:none;")
+
+        self.gridLayout_7.addWidget(self.label_30, 1, 0, 1, 1)
+
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
         self.gridLayout_9.addWidget(self.scrollArea, 0, 0, 1, 1)
@@ -552,14 +650,14 @@ class Ui_MainWindow(object):
 "color:rgba(240, 247, 255, 1);\n"
 "background:transparent;\n"
 "font-weight:bold;")
-        self.layoutWidget = QWidget(self.settingspage)
-        self.layoutWidget.setObjectName(u"layoutWidget")
-        self.layoutWidget.setGeometry(QRect(20, 190, 211, 23))
-        self.horizontalLayout_4 = QHBoxLayout(self.layoutWidget)
+        self.layoutWidget1 = QWidget(self.settingspage)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(20, 190, 211, 23))
+        self.horizontalLayout_4 = QHBoxLayout(self.layoutWidget1)
         self.horizontalLayout_4.setSpacing(15)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
-        self.auto_delete_checkbox = QCheckBox(self.layoutWidget)
+        self.auto_delete_checkbox = QCheckBox(self.layoutWidget1)
         self.auto_delete_checkbox.setObjectName(u"auto_delete_checkbox")
         self.auto_delete_checkbox.setMinimumSize(QSize(20, 20))
         self.auto_delete_checkbox.setMaximumSize(QSize(20, 20))
@@ -567,7 +665,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.auto_delete_checkbox)
 
-        self.label_2 = QLabel(self.layoutWidget)
+        self.label_2 = QLabel(self.layoutWidget1)
         self.label_2.setObjectName(u"label_2")
 
         self.horizontalLayout_4.addWidget(self.label_2)
@@ -607,14 +705,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.change_passphrase_btn)
 
-        self.layoutWidget1 = QWidget(self.settingspage)
-        self.layoutWidget1.setObjectName(u"layoutWidget1")
-        self.layoutWidget1.setGeometry(QRect(14, 80, 571, 51))
-        self.horizontalLayout_2 = QHBoxLayout(self.layoutWidget1)
+        self.layoutWidget2 = QWidget(self.settingspage)
+        self.layoutWidget2.setObjectName(u"layoutWidget2")
+        self.layoutWidget2.setGeometry(QRect(14, 80, 571, 51))
+        self.horizontalLayout_2 = QHBoxLayout(self.layoutWidget2)
         self.horizontalLayout_2.setSpacing(15)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.change_location_btn = QPushButton(self.layoutWidget1)
+        self.change_location_btn = QPushButton(self.layoutWidget2)
         self.change_location_btn.setObjectName(u"change_location_btn")
         self.change_location_btn.setMaximumSize(QSize(16777215, 40))
         self.change_location_btn.setMouseTracking(True)
@@ -641,7 +739,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2.addWidget(self.change_location_btn)
 
-        self.setting_location_input = QLineEdit(self.layoutWidget1)
+        self.setting_location_input = QLineEdit(self.layoutWidget2)
         self.setting_location_input.setObjectName(u"setting_location_input")
         self.setting_location_input.setMinimumSize(QSize(30, 35))
         self.setting_location_input.setMaximumSize(QSize(16777215, 30))
@@ -649,14 +747,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2.addWidget(self.setting_location_input)
 
-        self.layoutWidget2 = QWidget(self.settingspage)
-        self.layoutWidget2.setObjectName(u"layoutWidget2")
-        self.layoutWidget2.setGeometry(QRect(20, 150, 316, 23))
-        self.horizontalLayout_3 = QHBoxLayout(self.layoutWidget2)
+        self.layoutWidget3 = QWidget(self.settingspage)
+        self.layoutWidget3.setObjectName(u"layoutWidget3")
+        self.layoutWidget3.setGeometry(QRect(20, 150, 316, 23))
+        self.horizontalLayout_3 = QHBoxLayout(self.layoutWidget3)
         self.horizontalLayout_3.setSpacing(15)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.hide_encrypted_files_checkbox = QCheckBox(self.layoutWidget2)
+        self.hide_encrypted_files_checkbox = QCheckBox(self.layoutWidget3)
         self.hide_encrypted_files_checkbox.setObjectName(u"hide_encrypted_files_checkbox")
         self.hide_encrypted_files_checkbox.setMinimumSize(QSize(20, 20))
         self.hide_encrypted_files_checkbox.setMaximumSize(QSize(20, 20))
@@ -664,23 +762,23 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.hide_encrypted_files_checkbox)
 
-        self.label = QLabel(self.layoutWidget2)
+        self.label = QLabel(self.layoutWidget3)
         self.label.setObjectName(u"label")
 
         self.horizontalLayout_3.addWidget(self.label)
 
-        self.layoutWidget3 = QWidget(self.settingspage)
-        self.layoutWidget3.setObjectName(u"layoutWidget3")
-        self.layoutWidget3.setGeometry(QRect(20, 230, 341, 36))
-        self.horizontalLayout_5 = QHBoxLayout(self.layoutWidget3)
+        self.layoutWidget4 = QWidget(self.settingspage)
+        self.layoutWidget4.setObjectName(u"layoutWidget4")
+        self.layoutWidget4.setGeometry(QRect(20, 230, 341, 36))
+        self.horizontalLayout_5 = QHBoxLayout(self.layoutWidget4)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.label_5 = QLabel(self.layoutWidget3)
+        self.label_5 = QLabel(self.layoutWidget4)
         self.label_5.setObjectName(u"label_5")
 
         self.horizontalLayout_5.addWidget(self.label_5)
 
-        self.change_password_btn = QPushButton(self.layoutWidget3)
+        self.change_password_btn = QPushButton(self.layoutWidget4)
         self.change_password_btn.setObjectName(u"change_password_btn")
         self.change_password_btn.setMaximumSize(QSize(16777215, 40))
         self.change_password_btn.setMouseTracking(True)
@@ -905,7 +1003,7 @@ class Ui_MainWindow(object):
         self.close_btn.clicked.connect(MainWindow.close)
 
         self.stack_1.setCurrentIndex(2)
-        self.stack_2.setCurrentIndex(1)
+        self.stack_2.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -942,14 +1040,19 @@ class Ui_MainWindow(object):
         self.encryptpage_btn.setText(QCoreApplication.translate("MainWindow", u"Encrypt Files", None))
         self.dcryptpage_btn.setText(QCoreApplication.translate("MainWindow", u"Dcrypt Files", None))
         self.helppage_btn.setText(QCoreApplication.translate("MainWindow", u"Settings", None))
-        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Encrypt Files and Increase your safty", None))
-        self.label_19.setText(QCoreApplication.translate("MainWindow", u"Encrypted Files", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"   Dashboard", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"Encrypted ", None))
         self.label_25.setText(QCoreApplication.translate("MainWindow", u"50", None))
-        self.label_26.setText(QCoreApplication.translate("MainWindow", u"How it works?", None))
-        self.label_27.setText(QCoreApplication.translate("MainWindow", u"File Type", None))
-        self.label_28.setText(QCoreApplication.translate("MainWindow", u"2", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Files", None))
+        self.label_8.setText("")
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Decrypted", None))
+        self.label_9.setText("")
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Files", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"50", None))
         self.label_29.setText(QCoreApplication.translate("MainWindow", u"File Type", None))
-        self.label_30.setText(QCoreApplication.translate("MainWindow", u"Encrypt Images, Audio, Video, Documents, Folders and Files.", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"50", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"   Recent Activity", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"   Encrypt Images, Audio, Video, Documents, Folders and Files.", None))
         self.save_settings_btn.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"Settings", None))
         self.auto_delete_checkbox.setText(QCoreApplication.translate("MainWindow", u"dsdsffsd", None))

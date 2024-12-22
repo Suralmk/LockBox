@@ -21,4 +21,4 @@ class MessageBox(Ui_MessageBox,  QDialog):
         self.message_continue_btn.clicked.connect(lambda: self.accept())
         self.message_cancel_btn.clicked.connect(lambda: self.close())
 
-        self.message_continue_btn.setFocus()
+        #self.message_continue_btn.setFocus()

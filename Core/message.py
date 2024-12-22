@@ -22,3 +22,5 @@ class MessageBox(Ui_MessageBox,  QDialog):
         self.message_cancel_btn.clicked.connect(lambda: self.close())
 
         self.message_continue_btn.setFocus()
+
+        print("yes mana")

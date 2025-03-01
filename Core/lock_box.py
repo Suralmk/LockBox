@@ -7,6 +7,7 @@ from Core.start_app import StartApp
 from .message import MessageBox
 from .change_password import ChangePassword
 from .change_passphrase import ChangePassphrase
+from Auth.auth import LockBoxAuth
 
 class LockBox(Ui_MainWindow, QMainWindow):
     def __init__(self):
@@ -14,6 +15,12 @@ class LockBox(Ui_MainWindow, QMainWindow):
         self.setupUi(self)
         self.stack_1.setCurrentIndex(0)
         self.stack_2.setCurrentIndex(0)
+
+        #Initialize LockBox auth instance
+        self.auth = LockBoxAuth()
+        if not self.auth.user_exists():
+            #self.show_start_app_dialog() 
+            self.stack_1.setCurrentIndex(0)
 
         # Overlay when dialog opens
         self.overlay = QWidget(self)
@@ -79,8 +86,14 @@ class LockBox(Ui_MainWindow, QMainWindow):
         self.overlay.setVisible(False)
 
     def handle_lockbox_login(self):
+        password = self.stack_1_password_input.text()
+
+        if self.auth.authenticate_user(password):
             self.stack_1.setCurrentIndex(2)
-            self.show_message("Welcome to the club ma men u are real super here welcome to here man")
+            self.show_message("Welcome to the club, you're a real super user here!")
+        else:
+            self.show_message("Login failed: Incorrect username or password.")
+
 
     def show_message(self,message):
         message_box = MessageBox(message)

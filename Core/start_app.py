@@ -1,11 +1,16 @@
 from gui.StarterDialog import Ui_starterDialog
 from PySide6.QtWidgets import QDialog, QMessageBox
 from PySide6.QtCore import Qt, QPoint
+from Auth.auth import LockBoxAuth
 
 class StartApp(Ui_starterDialog,  QDialog):
     def __init__(self,  parent=None):
         super().__init__()
         self.setupUi(self)
+
+        # Initialize Lock box Auth
+
+        self.auth = LockBoxAuth()
 
         # Prevent dragging/moving
         self.setWindowFlag(Qt.FramelessWindowHint)
